@@ -11,84 +11,85 @@
     <header id="top">
       <h1>Coding Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
-      <h2>✨ Open the Console to See What's Happening ✨</h2>
+     <!--<h2>✨ Open the Console to See What's Happening ✨</h2>-->
     </header>
+    <section class="heading-links">
+     <a href="#html-section">HTML</a>
+      <a href="#css-section">CSS</a>
+      <a href="#javascript-section">JavaScript</a>
+      <a href="#git-section">GitBash/Command Line</a>
+      <a href="#github-section">GitHub</a>
+  </section>
     <main>
       <section class="card" id="html-section">
         <h2>HTML</h2>
-        <ul>
-          <li>br: line break</li>
-          <li>div: section in document</li>
-          <li>img: defines image</li>
-          <li>head: stores metadata, which contains information about the webpage</li>
-          <li>rel: specifies relationship between current doc and linked doc</li>
-          <li>id: points to a specific style declaration in a stylesheet</li>
+        <ul class="keyword">
+          <li><span>&lt;br&gt;</span> line break</li>
+          <li><span>&lt;div&gt;</span> section in document</li>
+          <li><span>&lt;img&gt;</span> defines image</li>
+          <li><span>&lt;head&gt;</span> stores metadata, which contains information about the webpage</li>
+          <li><span>&lt;rel&gt;</span> specifies relationship between current doc and linked doc</li>
+          <li><span>&lt;id&gt;</span> points to a specific style declaration in a stylesheet</li>
+          <li><span>&lt;pre&gt;</span> preserves spaces spaces and line breaks</li>
+          <li><span>&lt;code&gt;</span> defines a piece of computer code</li>
+          <li><span>&lt;a&gt;</span></li>
         </ul>
       </section> 
       <section class="card" id="css-section">
         <h2>CSS</h2>
-        <ul>
-          <li>Three was to style CSS: inline CSS, internal CSS stylesheet, external CSS stylesheet</li>
+          <p>Three was to style CSS: inline CSS, internal CSS stylesheet, external CSS stylesheet</p>
+          <br>
           <ul>
             <li>inline CSS: style directly in HTML file, apply to specific tag</li>
-              <ul>
-                <li>&lt;h1 style="color:red"&gt; Rework Study Guide &lt;/h1&gt;</li>
-              </ul>
+            <pre class="code-ex"><code>
+              &lt;h1 style="color: red"&gt; Rework Study Guide &lt;/h1&gt;
+          </code></pre>
             <li>internal stylesheet: embed entire stylesheet directly in HTML file, applies to whole page</li>
             <li>external stylesheet: most common, keeps CSS rules in separate file</li>
           </ul>
-          <li>CSS rule example</li>
+          <br>
+          <p>CSS rule example</p>
+          <br>
           <ul>
             <li>div {color: blue; text-align: justify}</li>
             <li>div: selector, defines the element/attribute</li>
             <li>color:blue; , text-align:justify: declaration, contains the property (color/text-align) and value (blue/justify)</li>
           </ul>
-          <li>comma combines two selectors into a single CSS rule so declarations affect both</li>
-          <li>.c: period beofre the c designates it as a class selector</li>
-          <li>margin: indicates how much space is around the outside of an element</li>
-          <li>padding: indicates how much space is around the content inside an element</li>
-        </ul>
+          <br>
+          <p>Formatting/display</p>
+          <br>
+          <ul class="keyword">
+          <li><span>,</span> combines two selectors into a single CSS rule so declarations affect both</li>
+          <li><span>.c</span> period before the c designates it as a class selector</li>
+          <li><span>content</span> made up of the height and width of content</li>
+          <li><span>padding</span> indicates how much space is around the content inside an element</li>
+          <li><span>border</span> extends content and padding to include border</li>
+          <li><span>margin</span> indicates how much space is around the outside of an element</li>
+          </ul>
       </section>
-      <!--
-      <section class="card" id="git-section">
-        <h2>Git Bash/Command Line</h2>
-        <ul>
-          <li>pwd: current working directory</li>
-          <li>ls: list of files/folders</li>
-          <li>cd: move between directories</li>
-          <li>cd ..: navigate backwards in directory</li>
-          <li>mkdir: creates new directory</li>
-          <li>touch: creates file in directory</li>
-          <li>start: opens a file</li>
-          <li>git status: shows current branch</li>
-          <li>git checkout -b [branch-name]: creates new branch</li>
-          <li>git pull origin main: sync local branch with main branch</li>
-          <li>git push origin [branch-name]-code: pushes local changes to GitHub branch</li>
-        </ul>
-      </section>-->
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
-        <ul>
-          <li>variables: containers hat store values. Start with "let" keyword followed by variable name</li>
-          <ul>
-            <li>let myVariable;</li>
-          </ul>
-          <li>comments: text that can be added to code, ignored by browser</li>
-          <ul>
-            <li>/*<br>
-              Everything in between is a comment<br>
-            */</li>
-          </ul>
+        <ul class="keyword">
+          <li>variables: containers that store values. Start with <span>let</span> keyword followed by variable name</li>
+          <pre class="code-ex"><code>
+            let myVariable;
+          </code></pre>
+          <li><span>comments</span> text that can be added to code, ignored by browser</li>
+          <pre class="code-ex"><code>
+            /*
+              Everything in between is a comment
+            */
+          </code></pre>
           <li>operators: mathematical symbols that produce results based on two values/variables</li>
           <li>conditionals: code structures used to test if an expression returns true. Commonly seen as if . . . else statements</li>
-          <ul>
-            <li>let iceCream = "chocolate";<br>
-            if (iceCream === "choclate") { <br>
-            alert ("Yay, I love chocolate ice cream!");<br>
-             } else {<br>
-            alert ("Awwww, but chocolate is my favorite . . .");<br>
-             }</li>
-          </ul>
+              <pre class="code-ex"><code>
+                let iceCream = "chocolate";
+                if (iceCream === "choclate") { 
+                  alert ("Yay, I love chocolate ice cream!");
+                } else {
+                  alert ("Awwww, but chocolate is my favorite . . .");
+                }
+              </code></pre>
           <li>function: way of packaging functionality to reuse. Often take on aguments</li>
           <ul>
             <li>let myVariable = document.querySelector (h1);</li>
@@ -132,30 +133,30 @@
             </li>
           </ul>
           <li>function: set of instructions in JavaScript that tells computer how to act</li>
-          <ul>
-            <li>function helloWorld () {<br>
-            // code block<br>
-            }</li>
-          </ul>
+          <pre class="code-ex"><code>
+            function helloWorld () {
+            // code block
+            }
+          </code></pre>
         </ul>
       </section>
       <section class="card" id="git-section">
         <h2>Git Bash/Command Line</h2>
-        <ul>
-          <li>pwd: current working directory</li>
-          <li>ls: list of files/folders</li>
-          <li>cd: move between directories</li>
-          <li>cd ..: navigate backwards in directory</li>
-          <li>mkdir: creates new directory</li>
-          <li>touch: creates file in directory</li>
-          <li>start: opens a file</li>
-          <li>git status: shows current branch</li>
-          <li>git checkout -b [branch-name]: creates new branch</li>
-          <li>git pull origin main: sync local branch with main branch</li>
-          <li>git push origin [branch-name]-code: pushes local changes to GitHub branch</li>
+        <ul class="keyword">
+          <li><span>pwd</span> current working directory</li>
+          <li><span>ls</span> list of files/folders</li>
+          <li><span>cd</span> move between directories</li>
+          <li><span>cd ..</span> navigate backwards in directory</li>
+          <li><span>mkdir</span> creates new directory</li>
+          <li><span>touch</span> creates file in directory</li>
+          <li><span>start</span> opens a file</li>
+          <li><span>git status</span> shows current branch</li>
+          <li><span>gir checkout -b [branch name]</span> creates new branch</li>
+          <li><span>git pull origin main</span> syncs local branch with main branch</li>
+          <li><span>git push origin [branch name] -code</span> pushes local changes to GitHub branch</li>
         </ul>
       </section>
-      <section class="card" id="git-section">
+      <section class="card" id="github-section">
         <h2>GitHub</h2>
         <ul>
           <li>To create a new repository in GitHub:</li>
@@ -176,7 +177,7 @@
           </ol>
         </ul>
       </section>
-      <section class="card" id="git-section">
+      <section class="card" id="link-section">
         <h2>Useful links</h2>
         <ul>
           <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#basic_built-in_terminal_commands">Command line crash course</a></li>
