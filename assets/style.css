@@ -2,6 +2,8 @@
     margin:  0;
     padding: 0;
     /* color: black; */
+    background-color: black;
+    color: white
 }
 header,
 footer {
@@ -31,7 +33,7 @@ p {
     color: blueviolet;
 }
 .card {
-    width: 50%;
+    width: 40%;
     margin: 40px auto;
     border: 5px solid purple;
     box-shadow: 5px 10px #888888;
@@ -51,4 +53,3 @@ p {
     font-family: 'Courier New', Courier, monospace;
     color:red;
     font-size: 15px;
-}
