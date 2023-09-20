@@ -84,6 +84,7 @@
           <li><span>&lt;pre&gt;</span> preserves spaces spaces and line breaks</li>
           <li><span>&lt;code&gt;</span> defines a piece of computer code</li>
           <li><span>&lt;a&gt;</span></li>
+          <li><span>!</span> in a blank html file auto-fills the bare bones of the file</li>
         </ul>
       </section> 
       <section class="card" id="css-section">
@@ -93,7 +94,7 @@
           <ul>
             <li>inline CSS: style directly in HTML file, apply to specific tag</li>
             <pre class="code-ex"><code>
-              &lt;h1 style="color: red"&gt; Rework Study Guide &lt;/h1&gt;
+        &lt;h1 style="color: red"&gt; Rework Study Guide &lt;/h1&gt;
           </code></pre>
             <li>internal stylesheet: embed entire stylesheet directly in HTML file, applies to whole page</li>
             <li>external stylesheet: most common, keeps CSS rules in separate file</li>
@@ -115,6 +116,9 @@
           <li><span>content</span> made up of the height and width of content</li>
           <li><span>padding</span> indicates how much space is around the content inside an element</li>
           <li><span>border</span> extends content and padding to include border</li>
+            <ul>
+              <li>border has three components that need to be added: size (__px), style (solid, dashed, doubled, ect.), and color</li>
+            </ul>
           <li><span>margin</span> indicates how much space is around the outside of an element</li>
           </ul>
       </section>
@@ -127,18 +131,18 @@
           </code></pre>
           <li><span>comments</span> text that can be added to code, ignored by browser</li>
           <pre class="code-ex"><code>
-            /*
-              Everything in between is a comment
-            */
+         /*
+           Everything in between is a comment
+         */
           </code></pre>
           <li>operators: mathematical symbols that produce results based on two values/variables</li>
           <li>conditionals: code structures used to test if an expression returns true. Commonly seen as if . . . else statements</li>
               <pre class="code-ex"><code>
-                let iceCream = "chocolate";
-                if (iceCream === "choclate") { 
-                  alert ("Yay, I love chocolate ice cream!");
-                } else {
-                  alert ("Awwww, but chocolate is my favorite . . .");
+            let iceCream = "chocolate";
+            if (iceCream === "choclate") { 
+              alert ("Yay, I love chocolate ice cream!");
+            } else {
+               alert ("Awwww, but chocolate is my favorite . . .");
                 }
               </code></pre>
           <li>function: way of packaging functionality to reuse. Often take on aguments</li>
