@@ -32,22 +32,26 @@ p {
     font-size: 20px;
     color: blueviolet;
 }
-.card {
-    width: 40%;
-    margin: 40px auto;
-    border: 5px solid purple;
-    box-shadow: 5px 10px #888888;
-}
 .heading-links a{
     color: green;
     font-size: 25px;
     text-align: center; 
     display: block;
 }
+.card {
+    width: 40%;
+    margin: 40px auto;
+    border: 5px solid purple;
+    box-shadow: 5px 10px #888888;
+}
 .keyword li span{
     font-family: 'Courier New', Courier, monospace;
     color: orange;
     font-size: 18px;
+}
+.select li span{
+    font-family: Arial;
+    color: aqua;
 }
 .code-ex{
     font-family: 'Courier New', Courier, monospace;
