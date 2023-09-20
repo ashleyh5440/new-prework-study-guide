@@ -15,13 +15,62 @@
     </header>
     <section class="heading-links">
       <br>
-     <a href="#html-section">HTML</a>
-      <a href="#css-section">CSS</a>
-      <a href="#javascript-section">JavaScript</a>
       <a href="#git-section">GitBash/Command Line</a>
       <a href="#github-section">GitHub</a>
+      <a href="#html-section">HTML</a>
+      <a href="#css-section">CSS</a>
+      <a href="#javascript-section">JavaScript</a>
+      <a href="#link-section">Useful Links</a>
   </section>
     <main>
+      <section class="card" id="git-section">
+        <h2>Git Bash/Command Line</h2>
+        <ul class="keyword">
+          <li><span>pwd</span> current working directory</li>
+          <li><span>ls</span> list of files/folders</li>
+          <li><span>cd</span> takes you to home directory</li>
+          <li><span>cd [destination]</span> move between directories</li>
+          <li><span>cd ..</span> navigate backwards in directory</li>
+          <li><span>mkdir [directory name]</span> creates new directory</li>
+          <li><span>rm -rf [directory name]</span> deletes directory
+          <li><span>touch [file name]</span> creates file in directory</li>
+          <li><span>rm [file name]</span> deletes file in directory
+          <li><span>start</span> opens a file</li>
+          <li><span>git status</span> shows current branch, checks if you're in a repo</li>
+          <li><span>git checkout -b [branch name]</span> creates new branch</li>
+          <li><span>git clone [paste SSH key or HTTPS]</span><li> clones repo to machine
+          <li><span>git pull origin main</span> syncs local branch with main branch</li>
+          <li><span>git push origin [branch name]</span> pushes local changes to GitHub branch</li>
+          <li><span>git commit -m "[comments]"</span> adds commits to the repo</li>
+          <li>To push local changes to GitHub, do the following steps:</li>
+            <ol>
+              <li><span>git add -A</span></li>
+              <li><span>git commit -m "[comments]"</span></li>
+              <li><span>git push origin [branch name]</span></li>
+            </ol>
+        </ul>
+      </section>
+      <section class="card" id="github-section">
+        <h2>GitHub</h2>
+        <ul>
+          <li>To create a new repository in GitHub:</li>
+          <ol>
+            <li>Select [New repository] and type in the name</li>
+            <li>Select [Public] or [Private]</li>
+            <li>Select [Add a README file]</li>
+            <li>Click [Create repository]</li>
+          </ol>
+        </ul>
+        <ul>
+          <li>To clone a repository:</li>
+          <ol>
+            <li>Navigate to the main page of repository</li>
+            <li>Click [&lt;&gt;Code]</li>
+            <li>Copy URL using SSH key</li>
+            <li>In Bash, put in [git clone [[paste SSH link]]]</li>
+          </ol>
+        </ul>
+      </section>
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul class="keyword">
@@ -139,54 +188,6 @@
             // code block
             }
           </code></pre>
-        </ul>
-      </section>
-      <section class="card" id="git-section">
-        <h2>Git Bash/Command Line</h2>
-        <ul class="keyword">
-          <li><span>pwd</span> current working directory</li>
-          <li><span>ls</span> list of files/folders</li>
-          <li><span>cd</span> takes you to home directory</li>
-          <li><span>cd [destination]</span> move between directories</li>
-          <li><span>cd ..</span> navigate backwards in directory</li>
-          <li><span>mkdir [directory name]</span> creates new directory</li>
-          <li><span>rm -rf [directory name]</span> deletes directory
-          <li><span>touch [file name]</span> creates file in directory</li>
-          <li><span>rm [file name]</span> deletes file in directory
-          <li><span>start</span> opens a file</li>
-          <li><span>git status</span> shows current branch, checks if you're in a repo</li>
-          <li><span>git checkout -b [branch name]</span> creates new branch</li>
-          <li><span>git clone [paste SSH key or HTTPS]</span><li> clones repo to machine
-          <li><span>git pull origin main</span> syncs local branch with main branch</li>
-          <li><span>git push origin [branch name]</span> pushes local changes to GitHub branch</li>
-          <li><span>git commit -m "[comments]"</span> adds commits to the repo</li>
-          <li>To push local changes to GitHub, do the following steps:</li>
-            <ol>
-              <li><span>git add -A</span></li>
-              <li><span>git commit -m "[comments]"</span></li>
-              <li><span>git push [branch name]</span></li>
-            </ol>
-        </ul>
-      </section>
-      <section class="card" id="github-section">
-        <h2>GitHub</h2>
-        <ul>
-          <li>To create a new repository in GitHub:</li>
-          <ol>
-            <li>Select [New repository] and type in the name</li>
-            <li>Select [Public] or [Private]</li>
-            <li>Select [Add a README file]</li>
-            <li>Click [Create repository]</li>
-          </ol>
-        </ul>
-        <ul>
-          <li>To clone a repository:</li>
-          <ol>
-            <li>Navigate to the main page of repository</li>
-            <li>Click [&lt;&gt;Code]</li>
-            <li>Copy URL using SSH key</li>
-            <li>In Bash, put in [git clone [[paste SSH link]]]</li>
-          </ol>
         </ul>
       </section>
       <section class="card" id="link-section">
