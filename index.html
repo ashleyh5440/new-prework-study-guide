@@ -9,11 +9,12 @@
   </head>
   <body>
     <header id="top">
-      <h1>Coding Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h1>✨ Coding Study Guide ✨</h1>
+      <img src="./assets/cat-crazt-blue-cat.gif" alt="Profile image of cat wearing a bow tie." />
      <!--<h2>✨ Open the Console to See What's Happening ✨</h2>-->
     </header>
     <section class="heading-links">
+      <br>
      <a href="#html-section">HTML</a>
       <a href="#css-section">CSS</a>
       <a href="#javascript-section">JavaScript</a>
@@ -37,7 +38,7 @@
       </section> 
       <section class="card" id="css-section">
         <h2>CSS</h2>
-          <p>Three was to style CSS: inline CSS, internal CSS stylesheet, external CSS stylesheet</p>
+          <p>Three ways to style CSS: inline CSS, internal CSS stylesheet, external CSS stylesheet</p>
           <br>
           <ul>
             <li>inline CSS: style directly in HTML file, apply to specific tag</li>
@@ -145,15 +146,26 @@
         <ul class="keyword">
           <li><span>pwd</span> current working directory</li>
           <li><span>ls</span> list of files/folders</li>
-          <li><span>cd</span> move between directories</li>
+          <li><span>cd</span> takes you to home directory</li>
+          <li><span>cd [destination]</span> move between directories</li>
           <li><span>cd ..</span> navigate backwards in directory</li>
-          <li><span>mkdir</span> creates new directory</li>
-          <li><span>touch</span> creates file in directory</li>
+          <li><span>mkdir [directory name]</span> creates new directory</li>
+          <li><span>rm -rf [directory name]</span> deletes directory
+          <li><span>touch [file name]</span> creates file in directory</li>
+          <li><span>rm [file name]</span> deletes file in directory
           <li><span>start</span> opens a file</li>
-          <li><span>git status</span> shows current branch</li>
-          <li><span>gir checkout -b [branch name]</span> creates new branch</li>
+          <li><span>git status</span> shows current branch, checks if you're in a repo</li>
+          <li><span>git checkout -b [branch name]</span> creates new branch</li>
+          <li><span>git clone [paste SSH key or HTTPS]</span><li> clones repo to machine
           <li><span>git pull origin main</span> syncs local branch with main branch</li>
-          <li><span>git push origin [branch name] -code</span> pushes local changes to GitHub branch</li>
+          <li><span>git push origin [branch name]</span> pushes local changes to GitHub branch</li>
+          <li><span>git commit -m "[comments]"</span> adds commits to the repo</li>
+          <li>To push local changes to GitHub, do the following steps:</li>
+            <ol>
+              <li><span>git add -A</span></li>
+              <li><span>git commit -m "[comments]"</span></li>
+              <li><span>git push [branch name]</span></li>
+            </ol>
         </ul>
       </section>
       <section class="card" id="github-section">
