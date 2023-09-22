@@ -12,11 +12,10 @@
       <br>
       <h1 id="title">✨ Coding Study Guide ✨</h1>
       <img src="./assets/cat-crazt-blue-cat.gif" alt="Profile image of cat wearing a bow tie." />
-     <!--<h2>✨ Open the Console to See What's Happening ✨</h2>-->
     </header>
     <section class="heading-links">
       <br>
-      <!-- makes these links to different sections of the page -->
+  <!-- makes these links to different sections of the page -->
       <a href="#git-section">GitBash/Command Line</a>
       <a href="#github-section">GitHub</a>
       <a href="#html-section">HTML</a>
@@ -28,6 +27,7 @@
       <section class="card" id="git-section">
         <h2>Git Bash/Command Line</h2>
         <ul class="keyword">
+  <!-- the <span> tag is how I was able to change the font and color of the keywords -->
           <li><span>pwd</span> current working directory</li>
           <li><span>ls</span> list of files/folders</li>
           <li><span>cd</span> takes you to home directory</li>
@@ -41,7 +41,7 @@
           <li><span>git status</span> shows current branch, checks if you're in a repo</li>
           <li><span>git checkout -b [branch name]</span> creates new branch</li>
           <li><span>git clone [paste SSH key or HTTPS]</span><li> clones repo to machine
-          <li><span>git pull origin main</span> syncs local branch with main branch</li>
+          <li><span>git pull origin [branch name]</span> syncs local branch with main branch</li>
           <li><span>git push origin [branch name]</span> pushes local changes to GitHub branch</li>
           <li><span>git commit -m "[comments]"</span> adds commits to the repo</li>
           <li>To push local changes to GitHub, do the following steps:</li>
@@ -81,23 +81,69 @@
       </section>
       <section class="card" id="html-section">
         <h2>HTML</h2>
-        <ul class="keyword">
-          <li><span>&lt;br&gt;</span> line break</li>
-          <li><span>&lt;div&gt;</span> section in document</li>
-          <li><span>&lt;img&gt;</span> defines image (self closing)</li>
-          <li><span>&lt;head&gt;</span> stores metadata, which contains information about the webpage</li>
-          <li><span>&lt;rel&gt;</span> specifies relationship between current doc and linked doc</li>
-          <li><span>&lt;id&gt;</span> points to a specific style declaration in a stylesheet</li>
-          <li><span>&lt;pre&gt;</span> preserves spaces spaces and line breaks</li>
-          <li><span>&lt;code&gt;</span> defines a piece of computer code</li>
-          <li><span>&lt;a&gt;</span></li>
-          <li><span>!</span> in a blank html file auto-fills the bare bones of the file</li>
+        <br>
+          <h3>Semantic elements</h3>
+          <br>
+            <p>Semantic elements have meaning on their own and cleary describe that meaning to browser and develper</p>
+            <br>
+              <ul class="keyword">
+                <li><span>h1-h6</span> defines HTML headings</li>
+                <li><span>p</span> defines a paragraph</li>
+                <li><span>title</span> defines a title for the document</li>
+                <li><span>form</span> defines an HTML form for user input</li>
+                <li><span>table</span> defines a table</li>
+                <li><span>article</span> defines independent, self-contained content</li>
+                <li><span>aside</span> defines content aside from the page content</li>
+                <li><span>details</span> defines additional details that the user can view or hide</li>
+                <li><span>figcaption</span> defines a caption for a <span>figure</span> element</li>
+                <li><span>figure</span> specifies self-contained content, like illustrations, diagrams, photos, code listings, etc</li>
+                <li><span>footer</span> defines a footer for a document or section</li>
+                <li><span>header</span> specifies a header for a document or section</li>
+                <li><span>nav</span> defines navigation links</li>
+                <li><span>main</span> specifies the main content of a document</li>
+                <li><span>mark</span> defines marked/highlighted text</li>
+                <li><span>section</span> defines a section in a document</li>
+                <li><span>summary</span> defines a visible heading for a <span>details</span> element</li>
+                <li><span>time</span> defines a date/time</li>
+                <li><span>img</span> defines image (self closing)</li>
+                <li><span>head</span> stores metadata, which contains information about the webpage</li>
+                <li><span>pre</span> preserves spaces spaces and line breaks</li>
+                <li><span>code</span> defines a piece of computer code </li>
+                <li><span>a</span> anchor tag, defines a hyperlink</li>
+                <li><span>rel</span> specifies relationship between current doc and linked doc</li>
+                <li><span>label</span> defines a label for an <span>input</span> element</li>
+              </ul>
+          <br>
+          <h3>Non-semantic elements</h3>
+          <br>
+            <p>Non-semantic elements have no meaning on their own and tells you nothing about the content</p>
+              <ul class="keyword">
+                <li><span>br</span> line break</li>
+                <li><span>div</span> section in document</li>
+                <li><span>span</span> allows you to style specific words or phrases</li>
+                <li><span>font</span></li>
+              </ul>
+          <br>
+          <h3>Attributes</h3>
+          <br>
+            <p>Attributes add additonal information to HTML elements</p>
+              <ul class="keyword">
+                <li><span>href</span> specifies the URL of the page the link goes to</li>
+                <li><span>src</span> specifies the path to the image to be displayed</li>
+                <li><span>alt</span> provides an alternate text for an image</li>
+                <li><span>style</span> attribute is used to add styles to an element</li>
+                <li><span>lang</span> declares the language of the Web page</li>
+                <li><span>title</span>  defines some extra information about an element</li>
         </ul>
         <br>
-        <h3>Helpful links</h3>
-          <ul>
+        <h3>Helpful tips and links</h3>
+        <br>
+          <ul class="keyword">
+            <li><span>!</span> in a blank html file auto-fills the bare bones of the file</li>
             <li><a href="https://www.w3schools.com/TAGS/ref_byfunc.asp">HTML tags</a></li>
             <li><a href="https://coding-boot-camp.github.io/full-stack/html/html-cheatsheet">HTML cheatsheet</a></li>
+            <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML Semantic Elements</a></li>
+            <li><a href="https://www.w3schools.com/html/html_attributes.asp">HTML attributes</a></li>
           </ul>
       </section> 
       <section class="card" id="css-section">
