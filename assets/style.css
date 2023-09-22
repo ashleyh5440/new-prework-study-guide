@@ -12,8 +12,7 @@ footer {
     background-color: purple;
     color: white;
 }
-h1,
-h2 {
+h1, h2, h3 {
     text-align: center;
 }
 img {
@@ -22,6 +21,12 @@ img {
     width: 115x;
     margin-left: auto;
     margin-right: auto;
+}
+main{
+    /* made the cards side-by-side */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 ul {
     padding-left: 40px;
@@ -43,6 +48,8 @@ p {
     margin: 40px auto;
     border: 5px solid purple;
     box-shadow: 5px 10px #888888;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 .keyword li span{
     font-family: 'Courier New', Courier, monospace;

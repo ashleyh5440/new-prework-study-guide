@@ -16,6 +16,7 @@
     </header>
     <section class="heading-links">
       <br>
+      <!-- makes these links to different sections of the page -->
       <a href="#git-section">GitBash/Command Line</a>
       <a href="#github-section">GitHub</a>
       <a href="#html-section">HTML</a>
@@ -50,6 +51,12 @@
               <li><span>git push origin [branch name]</span></li>
             </ol>
         </ul>
+        <br>
+        <h3>Helpful links</h3>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#basic_built-in_terminal_commands">Command line crash course</a></li>
+          <li><a href="https://medium.com/@saurabhdahibhate50/devops-day-12-task-ec437bc30715">Cheat sheet for Bash/GitHub</a></li>
+        </ul>
       </section>
       <section class="card" id="github-section">
         <h2>GitHub</h2>
@@ -77,7 +84,7 @@
         <ul class="keyword">
           <li><span>&lt;br&gt;</span> line break</li>
           <li><span>&lt;div&gt;</span> section in document</li>
-          <li><span>&lt;img&gt;</span> defines image</li>
+          <li><span>&lt;img&gt;</span> defines image (self closing)</li>
           <li><span>&lt;head&gt;</span> stores metadata, which contains information about the webpage</li>
           <li><span>&lt;rel&gt;</span> specifies relationship between current doc and linked doc</li>
           <li><span>&lt;id&gt;</span> points to a specific style declaration in a stylesheet</li>
@@ -86,6 +93,12 @@
           <li><span>&lt;a&gt;</span></li>
           <li><span>!</span> in a blank html file auto-fills the bare bones of the file</li>
         </ul>
+        <br>
+        <h3>Helpful links</h3>
+          <ul>
+            <li><a href="https://www.w3schools.com/TAGS/ref_byfunc.asp">HTML tags</a></li>
+            <li><a href="https://coding-boot-camp.github.io/full-stack/html/html-cheatsheet">HTML cheatsheet</a></li>
+          </ul>
       </section> 
       <section class="card" id="css-section">
         <h2>CSS</h2>
@@ -99,20 +112,23 @@
             <li>internal stylesheet: embed entire stylesheet directly in HTML file, applies to whole page</li>
             <li>external stylesheet: most common, keeps CSS rules in separate file</li>
           </ul>
-          <br>
+          <!-- <br>
           <p>CSS rule example</p>
           <br>
           <ul>
             <li>div {color: blue; text-align: justify}</li>
             <li>div: selector, defines the element/attribute</li>
             <li>color:blue; , text-align:justify: declaration, contains the property (color/text-align) and value (blue/justify)</li>
-          </ul>
+          </ul> -->
           <br>
           <p>Formatting/display</p>
           <br>
           <ul class="keyword">
+          <li><span>*</span> universal selector, effects everything on the page</li>
+          <li><span>[blank]</span> element selectors, effects named element</li>
+          <li><span>.</span> class selector, effects everything within that class, can be used multiple times</li>
+          <li><span>#</span> id selector, effects everything with that id, can only be used once</li>
           <li><span>,</span> combines two selectors into a single CSS rule so declarations affect both</li>
-          <li><span>.c</span> period before the c designates it as a class selector</li>
           <li><span>content</span> made up of the height and width of content</li>
           <li><span>padding</span> indicates how much space is around the content inside an element</li>
           <li><span>border</span> extends content and padding to include border</li>
@@ -120,6 +136,17 @@
               <li>border has three components that need to be added: size (__px), style (solid, dashed, doubled, ect.), and color</li>
             </ul>
           <li><span>margin</span> indicates how much space is around the outside of an element</li>
+          </ul>
+          <br>
+        <h3>Helpful links</h3>
+          <ul>
+            <li><a href="https://www.w3schools.com/cssref/css_selectors.php">CSS selectors</a></li>
+            <li><a href="https://flukeout.github.io/">CSS diner</a> CSS selectors game</li>
+            <li><a href="https://www.w3schools.com/css/css_display_visibility.asp">CSS display</a></li>
+            <li><a href="https://www.w3schools.com/css/css_positioning.asp">CSS positioning</a></li>
+            <li><a href="https://coolors.co/">color pallet generator</a></li>
+            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guide to flexbox</a></li>
+            <li><a href="https://flexboxfroggy.com/">flexboxfroggy</a> CSS flexbox game 
           </ul>
       </section>
       <section class="card" id="javascript-section">
@@ -195,7 +222,7 @@
           </code></pre>
         </ul>
       </section>
-      <section class="card" id="link-section">
+      <!-- <section class="card" id="link-section">
         <h2>Useful links</h2>
         <ul>
           <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#basic_built-in_terminal_commands">Command line crash course</a></li>
@@ -207,7 +234,7 @@
               <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_Selector">CSS selector</a></li>
               <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display">Display</a></li>
             </ul>
-        </ul>
+        </ul> -->
       </section>
     </main>
 
