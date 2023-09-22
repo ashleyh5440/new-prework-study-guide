@@ -16,7 +16,7 @@
       <a href="#html-section">HTML</a>
       <a href="#css-section">CSS</a>
       <a href="#javascript-section">JavaScript</a>
-      <a href="#link-section">Useful Links</a>
+      <!-- <a href="#link-section">Useful Links</a> -->
     </nav>
     <header id="top">
       <br>
@@ -149,16 +149,17 @@
       </section> 
       <section class="card" id="css-section">
         <h2>CSS</h2>
+        <br>
           <p>Three ways to style CSS: inline CSS, internal CSS stylesheet, external CSS stylesheet</p>
           <br>
-          <ul>
-            <li>inline CSS: style directly in HTML file, apply to specific tag</li>
-            <pre class="code-ex"><code>
-        &lt;h1 style="color: red"&gt; Rework Study Guide &lt;/h1&gt;
+            <ul>
+              <li>inline CSS: style directly in HTML file, apply to specific tag</li>
+                <pre class="code-ex"><code>
+            &lt;h1 style="color: red"&gt; Rework Study Guide &lt;/h1&gt;
           </code></pre>
-            <li>internal stylesheet: embed entire stylesheet directly in HTML file, applies to whole page</li>
-            <li>external stylesheet: most common, keeps CSS rules in separate file</li>
-          </ul>
+              <li>internal stylesheet: embed entire stylesheet directly in HTML file, applies to whole page</li>
+              <li>external stylesheet: most common, keeps CSS rules in separate file</li>
+            </ul>
           <!-- <br>
           <p>CSS rule example</p>
           <br>
@@ -168,7 +169,7 @@
             <li>color:blue; , text-align:justify: declaration, contains the property (color/text-align) and value (blue/justify)</li>
           </ul> -->
           <br>
-          <p>Attributes/Formatting</p>
+          <h3>Attributes/Formatting</h3>
             <br>
             <ul class="keyword">
               <li><span>*</span> universal selector, effects everything on the page</li>
@@ -178,7 +179,7 @@
               <li><span>,</span> combines two selectors into a single CSS rule so declarations affect both</li>
             </ul>
           <br>
-          <p>Display</p>
+          <h3>Display</h3>
             <ul class="keyword">
               <li><span>color</span> effects text color</li>
               <li><span>background-color</span> effects the color of the container</li>
@@ -187,9 +188,11 @@
               <li><span>display: block</span> starts on a new line and takes up full width</li>
               <li><span>display: none</span> hides the display</li>
               <li><span>text-align</span></li>
+              <li>media query: makes the design responsive based on certian conditions, i.e. screen size</li>
+              <li>flexbox: 
             </ul>
           <br>
-          <p>Box Model</p>
+          <h3>Box Model</h3>
             <ul class="keyword">
               <li><span>content</span> made up of the height and width of content</li>
               <li><span>padding</span> indicates how much space is around the content inside an element</li>
@@ -199,6 +202,27 @@
                 </ul>
               <li><span>margin</span> indicates how much space is around the outside of an element</li>
             </ul>
+          <h3>Flexbox</h3>
+          <br>
+            <ul class="keyword">
+              <li><span>justify-content</span> effects items on the x axis</li>
+                <img class="flexbox" src="./assets/justify-content.png" alt="orange boxes arranged in rows according to justify-content">
+              <li><span>align-items</span> effects items on the y axis</li>
+                <img class="flexbox" src="./assets/align-items.png" alt="orange boxes arranged in columns according to align-items">
+              <li><span>flex-direction</span> puts items in rows or coulmns</li>
+                <img class="flexbox" src="./assets/flex-direction.png" alt="orange boxes arranged in columns and rows according to flex-direction">
+              <li><span>order</span> changes/controls the items appear on the screen on the x axis</li>
+                <img class="flexbox" src="./assets/order.png" alt="">
+              <li><span>align-self</span> changes/controls the items appear on the screen on the y axis</li>
+                <img class="flexbox" src="./assets/align-self.png" alt="">
+              <li><span>flex-flow</span> combination of <span>flex-direction</span> and <span>flex-wrap</span></li>
+              <li><span>align-content</span> decides how multiple lines of items are spaced apart from each other</li>
+                <img class="flexbox" src="./assets/align-content.png" alt="">
+            </ul>
+
+
+
+
           <br>
         <h3>Helpful links</h3>
           <ul>
