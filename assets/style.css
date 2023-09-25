@@ -1,7 +1,6 @@
 * {
     margin:  0;
     padding: 0;
-    /* color: black; */
     background-color: black;
     color: white
 }
@@ -36,7 +35,8 @@ main{
     /* made the cards side-by-side since this is the parent of .card */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 ul {
@@ -54,6 +54,10 @@ footer {
     width: 100%;
     height: 100px;
     background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* added the display:flex to make footer text sit within the footer */
 }
 
 .heading-links a {
@@ -70,6 +74,8 @@ footer {
     border: 5px solid purple;
     /* border-radius: 20%; */
     box-shadow: 5px 10px #888888;
+    /* flex-grow: 1;  */
+    /* got rid of the empty space when using flex wrap */
 
 }
 
@@ -84,17 +90,19 @@ footer {
     color: aqua;
 }
 
-.code-ex{
+.code-ex code{
     font-family: 'Courier New', Courier, monospace;
     color: red;
-    font-size: 15px;
+    font-size: 15px; 
 }
 
 .flexbox {
     height: auto;
     width: 200px;
 }
-
+.footer-text {
+    background-color: purple;
+}
 #title {
     /* background-color: purple; */
     font-family: 'Courier New', Courier, monospace;
