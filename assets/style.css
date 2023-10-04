@@ -19,6 +19,7 @@ header {
 
 h1, h2, h3 {
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 img {
@@ -35,8 +36,8 @@ main{
     /* made the cards side-by-side since this is the parent of .card */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    /* justify-content: space-around;
+    align-items: flex-start; */
 }
 
 ul {
@@ -103,6 +104,34 @@ footer {
 .footer-text {
     background-color: purple;
 }
+
+/* opens and closes accordion panel */
+.accordion {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: purple;
+  }
+  
+  /* Styles accordion panel. */
+  .panel {
+    padding: 0 18px;
+    background-color: black;
+    display: none;
+    overflow: hidden;
+  }
+
 #title {
     /* background-color: purple; */
     font-family: 'Courier New', Courier, monospace;
