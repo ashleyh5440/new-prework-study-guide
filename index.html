@@ -179,9 +179,9 @@
               <li><span>display: inline</span> starts on the same line and only takes as much width as needed</li>
               <li><span>display: block</span> starts on a new line and takes up full width</li>
               <li><span>display: none</span> hides the display</li>
-              <li><span>text-align</span></li>
-              <li>media query: makes the design responsive based on certian conditions, i.e. screen size</li>
-              <li>flexbox: 
+              <li><span>text-align</span> changes text display to left, center, or right</li>
+              <li><span>text-transform</span> decides upper and lowercase</li>
+              <li><span>media query</span> makes the design responsive based on certian conditions, i.e. screen size</li>
             </ul>
           <br>
           <h3>Box Model</h3>
@@ -193,9 +193,12 @@
                   <li>border has three components that need to be added: size (__px), style (solid, dashed, doubled, ect.), and color</li>
                 </ul>
               <li><span>margin</span> indicates how much space is around the outside of an element</li>
+                <ul>
+                  <li>* border, padding, and margin get applied clockwise: top, right, bottom, left</li>
+                </ul>
             </ul>
           <br>
-          <button class="accordion"><strong>Flexbox</strong></button>
+          <button class="accordion"><strong>Flexbox &#8595</strong></button>
           <div class="panel">
             <ul class="keyword">
               <li><span>justify-content</span> effects items on the <strong>x axis</strong></li>
@@ -218,7 +221,22 @@
             </ul>
           </div>
           <br>
-        <h3>Helpful links</h3>
+          <h3>Pseudo Classes and Pseudo Elements</h3>
+            <p><strong>Pseudo classes</strong> define a special state of an element, ex. changing the color when the mouse hovers over it. They act as if a class was applied to some part of the document. Start with a single colon directly after the selector. Example below makes a button blue when hovered over:</p>
+                      <pre class="code-ex"><code>
+                        button:hover {
+                          color: blue;
+                       }
+                      </code></pre>
+            <p><strong>Pseudo elements</strong> styles specific parts of an element. Act as if a new HTML element was added to the document. Start with a double colon directly after the selector. Example below changes the font and color of the first line in a paragraph: </p>
+                    <pre class="code-ex"><code>
+                      p::first-line {
+                        color: blue;
+                        font-variant: small-caps;
+                      }
+                    </code></pre>
+        <br>
+        <h3>Helpful tips and links</h3>
           <ul>
             <li><a href="https://www.w3schools.com/cssref/css_selectors.php">CSS selectors</a></li>
             <li><a href="https://flukeout.github.io/">CSS diner</a> CSS selectors game</li>
