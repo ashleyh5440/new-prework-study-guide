@@ -155,7 +155,7 @@
             <ul>
               <li>inline CSS: style directly in HTML file, apply to specific tag</li>
                 <pre class="code-ex"><code>
-            &lt;h1 style="color: red"&gt; Rework Study Guide &lt;/h1&gt;
+  &lt;h1 style="color: red"&gt; Rework Study Guide &lt;/h1&gt;
           </code></pre>
               <li>internal stylesheet: embed entire stylesheet directly in HTML file, applies to whole page</li>
               <li>external stylesheet: most common, keeps CSS rules in separate file</li>
@@ -224,16 +224,16 @@
           <h3>Pseudo Classes and Pseudo Elements</h3>
             <p><strong>Pseudo classes</strong> define a special state of an element, ex. changing the color when the mouse hovers over it. They act as if a class was applied to some part of the document. Start with a single colon directly after the selector. Example below makes a button blue when hovered over:</p>
                       <pre class="code-ex"><code>
-                        button:hover {
-                          color: blue;
-                       }
+        button:hover {
+         color: blue;
+        }
                       </code></pre>
             <p><strong>Pseudo elements</strong> styles specific parts of an element. Act as if a new HTML element was added to the document. Start with a double colon directly after the selector. Example below changes the font and color of the first line in a paragraph: </p>
                     <pre class="code-ex"><code>
-                      p::first-line {
-                        color: blue;
-                        font-variant: small-caps;
-                      }
+      p::first-line {
+       color: blue;
+       font-variant: small-caps;
+      }
                     </code></pre>
         <br>
         <h3>Helpful tips and links</h3>
@@ -258,10 +258,10 @@
         <p>JavaScript is what allows a user to interact with the site</p>
         <br>
         <h3>Format</h3>
-        <pre><code class="code-ex">
+        <pre class="code-ex">
           keyword  variable name  assignment  value   termination
-            var       character       =     Snow White  ;
-        </code></pre>
+           <code> var       character       =     Snow White  ;</code>
+        </pre>
         <ul class="keyword">
           <li><span>variables</span> store value and can be declared 4 ways: automatically or with the keywords <span>var</span>, <span>let</span>, or <span>const</span>. Types of variables:</li>
             <ul>
@@ -273,7 +273,7 @@
                   <li>* type is tied to the value, not the variable</li>
                 </ul>
             </ul>
-          <li><span>arrays</span> store multiple items under a single variable name</li>
+          <li><span>arrays</span> store multiple items under a single variable name, go inside <span>[brackets]</span></li>
           <li><span>logical comparison</span> test equality or difference between variable/values.
             <ul>
               <li><span>==</span> equal to</li>
@@ -292,7 +292,43 @@
                 <li><span>!</span> not</li>
               </ul>
         </ul>
-
+        <h3> For loops</h3>
+        <br>
+        <pre class="code-ex"><code>      for (let i = 0; i &lt; array.length; i++) {
+          const element = array[i]; 
+          
+        }</code></pre>
+        <p>3 statements in a for loop:</p>
+            <ul class="keyword">
+              <li><strong> starting point:</strong> <span> i = 0</span> starts loop at beginning of array</li>
+              <li><strong>condition:</strong> <span>i &lt; array.length</span> length of array, which determines how long loop will run </li>
+              <li><strong>final:</strong> what allows the array to iterate over each item. <span>x++</span> makes sure every time the code loops, it increses by one</li>
+            </ul>
+        <br>
+        <h3>Functions</h3>
+        <br>
+        <p>Functions are usable blocks of code that perform specific tasks. They should only ever have one job.<p>
+        <br>
+        <h4>Functions vs function expressions</h4>
+          <ul class="keyword">
+            <li><span>functions</span> load before any code is executed, global</li>
+            <li><span>function expressions</span> load only when that line is reached, local</li>
+          </ul>
+        <br>
+        <h3>Conditional Statements</h3>
+        <br>
+        <p>Conditional statements perform different actions based on different conditions.</p>
+        <br>
+        <ul class="keyword">
+          <li><span>if</span> specifies code to be executed if condition is true, keep checking no matter what</li>
+          <li><span>else if</span> specifies new condition to test if 1st is false</li>
+          <li><span>else</span> specifies code to be executed if condition is false, stops it from checking for more conditions</li>
+        </ul> 
+        <br>
+        <h3>Methods and Objects</h3>
+        <br>
+        <p><strong>Methods</strong> are  actions that can be performed on objects; they are propertyies containing a function definition. <strong>Objects</strong> are collections of properties.</p>
+          
 
         <!-- <ul class="keyword">
           <li>variables: containers that store values. Start with <span>let</span> keyword followed by variable name</li>
