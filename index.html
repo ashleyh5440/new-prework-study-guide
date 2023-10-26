@@ -328,6 +328,46 @@
         <h3>Methods and Objects</h3>
         <br>
         <p><strong>Methods</strong> are  actions that can be performed on objects; they are propertyies containing a function definition. <strong>Objects</strong> are collections of properties.</p>
+        <br>
+        <p>Methods</p>
+        <br>
+        <ul>
+          <li>a method is a property containing a function definition, attached to variables/objects</li>
+          <li><span>this</span> is a keyword that refers to an object. Which object depends on how it's being used/called.
+            <ul class="keyword">
+              <li><span>this</span> alone and in a function refers to the <strong>global object</strong></li>
+              <li><span>this</span> in a function in strict mode is <strong>undefined</strong><li>
+              <li><span>this</span> in an event refers to the <strong>element</strong> that recieved the event</li>
+              <li>methods like <span>call()</span>, <span>apply()</span>, and <span>bind()</span> can refer <span>this</span> to any object</li>
+            </ul>
+            <li>You can access a object with the following syntax:</li>
+            <pre class="code-ex"><code>objectName.methodName()</code></pre>
+          </ul>
+          <br>
+          <p>Objects</p>
+          <br>
+          <ul class="keyword">
+            <li> have a <span>{</span> right after the assignment; a collection of properties
+              <ul>
+                <li>properties are made up of key-value pairs</li>
+              </ul>
+            <pre class="code-ex"><code>
+              var planet = {
+              name: "Earth",
+              age: "4.543 billion years",
+              moons: 1,
+              } </code></pre>
+              <ul>
+                <li> to access property's value, use the object's name associated key</li>
+              </ul>
+              <pre class="code-ex"><code>
+                console.log(planet.name);
+              </code></pre>
+          </ul>
+        <h3>APIs</h3>
+        <br>
+        <p>APIs are constructs made available in programming languages to allwo developers to create complex functionality more easily. It's a set of methods, properties, events, and URLs that allow interaction with a web browser.</p>
+        
           
 
         <!-- <ul class="keyword">
