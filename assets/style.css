@@ -1,4 +1,60 @@
-* {
+section {
+    position: relative;
+}
+
+#arcade-img {
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    border: 5px solid red;
+    position: absolute;
+    width: 75%;
+    height: 67%;
+    bottom: 14%;
+    left: 12%;
+}
+
+.whole {
+    border: 5px solid blue;
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+#card1, #card2, #card3, #card4, #card5, #card6 {
+    border: 5px solid green;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+/* body {
+    background-image: url('arcade-background.jpg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center top;
+} */
+
+
+
+
+
+/* * {
     margin:  0;
     padding: 0;
     background-color: black;
@@ -27,18 +83,18 @@ img {
     height: 125px;
     width: 115x;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     /* curves the edges of the picture */
     /* border-radius: 20%; */
-}
+/* }
 
-main{
+main{ */
     /* made the cards side-by-side since this is the parent of .card */
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     /* justify-content: space-around;
     align-items: flex-start; */
-}
+/* }
 
 ul {
     padding-left: 40px;
@@ -57,9 +113,9 @@ footer {
     background-color: purple;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* added the display:flex to make footer text sit within the footer */
-}
+/* }
 
 .heading-links a {
     color: white;
@@ -72,12 +128,12 @@ footer {
 .card {
     width: 40%;
     margin: 40px auto;
-    border: 5px solid purple;
+    border: 5px solid purple; */
     /* border-radius: 20%; */
-    box-shadow: 5px 10px #888888;
+    /* box-shadow: 5px 10px #888888; */
     /* flex-grow: 1;  */
     /* got rid of the empty space when using flex wrap */
-
+/* 
 }
 
 .keyword li span{
@@ -103,10 +159,10 @@ footer {
 }
 .footer-text {
     background-color: purple;
-}
+} */
 
 /* opens and closes accordion panel */
-.accordion {
+/* .accordion {
     background-color: black;
     color: white;
     cursor: pointer;
@@ -122,22 +178,22 @@ footer {
   
   .active, .accordion:hover {
     background-color: purple;
-  }
+  } */
   
   /* Styles accordion panel. */
-  .panel {
+  /* .panel {
     padding: 0 18px;
     background-color: black;
     display: none;
     overflow: hidden;
   }
 
-#title {
+#title { */
     /* background-color: purple; */
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace;
 }
 @media screen and (max-width: 992px) {
     .card {
       width: 100%
     }  
-}
+} */
