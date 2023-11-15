@@ -1,15 +1,15 @@
 const card3 = document.getElementById("card3")
-.addEventListener('click', function() {
+.addEventListener("click", function() {
   window.location.href = 'html.html'
 })
 
 const card4 = document.getElementById("card4")
-.addEventListener('click', function() {
+.addEventListener("click", function() {
   window.location.href = 'css.html'
 })
 
 const card5 = document.getElementById("card5")
-.addEventListener('click', function() {
+.addEventListener("click", function() {
   window.location.href = 'javascript.html'
 })
 

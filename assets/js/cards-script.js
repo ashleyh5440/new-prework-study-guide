@@ -1,82 +1,75 @@
 //when a box is clicked, the initial section disappears and the corresponding box section appears
 
-const box1 = document.getElementById("box1")
-.addEventListener('click', function() {
-  
-})
+//when back-btn is clicked, screen returns to the initial section 
 
-const box2 = document.getElementById("box2")
-.addEventListener('click', function() {
-  
-})
+const box1 = document.getElementById("box1");
+const box2 = document.getElementById("box2");
+const box3 = document.getElementById("box3");
+const box4 = document.getElementById("box4");
+const box5 = document.getElementById("box5");
+const box6 = document.getElementById("box6");
 
-const box3 = document.getElementById("box3")
-.addEventListener('click', function() {
+const box1Info = document.getElementById("box1-info");
+const box2Info = document.getElementById("box2-info");
+const box3Info = document.getElementById("box3-info");
+const box4Info = document.getElementById("box4-info");
+const box5Info = document.getElementById("box5-info");
+const box6Info = document.getElementById("box6-info");
 
-})
+const backBtn1 = document.getElementById("back-btn1");
+const backBtn2 = document.getElementById("back-btn2");
+const backBtn3 = document.getElementById("back-btn3");
+const backBtn4 = document.getElementById("back-btn4");
+const backBtn5 = document.getElementById("back-btn5");
+const backBtn6 = document.getElementById("back-btn6");
 
+//function to show box information
+function showBoxInfo(boxInfo) {
+    document.querySelector(".initial").classList.add("hidden");
+    boxInfo.classList.remove("hidden");
+    currentBox = boxInfo;
+}
+//function for back button
+function handleBackBtnClick() {
+    document.querySelector(".initial").classList.remove("hidden");
+    box1Info.classList.add("hidden");
+    box2Info.classList.add("hidden");
+    box3Info.classList.add("hidden");
+    box4Info.classList.add("hidden");
+    box5Info.classList.add("hidden");
+    box6Info.classList.add("hidden");
+}
+//calls function to show box info for each box
+box1.addEventListener("click", function () {
+    showBoxInfo(box1Info);
+});
 
+box2.addEventListener("click", function () {
+    showBoxInfo(box2Info);
+});
 
+box3.addEventListener("click", function () {
+    showBoxInfo(box3Info);
+});
 
+// box4.addEventListener("click", function () {
+//   showBoxInfo(box4Info);
+// });
 
+// box5.addEventListener("click", function () {
+//   showBoxInfo(box5Info);
+// });
 
+// box6.addEventListener("click", function () {
+//   showBoxInfo(box6Info);
+// });
 
-
-// for flexbox accordian
-// var acc = document.getElementsByClassName("accordion");
-// var i;
-
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-
-//     var panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//       panel.style.display = "none";
-//     } else {
-//       panel.style.display = "block";
-//     }
-//   });
-// }
- 
-
-
-
-
-
-// var topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
-// var randomTopic = topics[Math.floor(Math.random() * topics.length)];
-
-// function listTopics() {
-//   for (var x = 0; x < topics.length; x++) {
-//     console.log(topics[x]);
-//   }
-// }
-
-// function selectTopic() {
-// if (randomTopic === 'HTML') {
-//   console.log("Let's study HTML!");
-// } else if (randomTopic === 'CSS') {
-//   console.log("Let's study CSS!");
-// } else if (randomTopic === 'Git') {
-//   console.log("Let's study Git!");
-// } else if (randomTopic === 'JavaScript') {
-//   console.log("Let's study JavaScript!");
-// } else {
-//   console.log('Please try again!');
-// }
-// }
-// console.log('Here are the topics we learned through Prework:');
-// listTopics()
-// console.log('Which topic should we study first?');
-// selectTopic()
-
-
-
-
-
-
-
+backBtn1.addEventListener("click", handleBackBtnClick);
+backBtn2.addEventListener("click", handleBackBtnClick);
+backBtn3.addEventListener("click", handleBackBtnClick);
+// backBtn4.addEventListener("click", handleBackBtnClick);
+// backBtn5.addEventListener("click", handleBackBtnClick);
+// backBtn6.addEventListener("click", handleBackBtnClick);
 
 
 
