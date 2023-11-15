@@ -9,6 +9,7 @@ const box4 = document.getElementById("box4");
 const box5 = document.getElementById("box5");
 const box6 = document.getElementById("box6");
 
+
 const box1Info = document.getElementById("box1-info");
 const box2Info = document.getElementById("box2-info");
 const box3Info = document.getElementById("box3-info");
@@ -22,6 +23,13 @@ const backBtn3 = document.getElementById("back-btn3");
 const backBtn4 = document.getElementById("back-btn4");
 const backBtn5 = document.getElementById("back-btn5");
 const backBtn6 = document.getElementById("back-btn6");
+
+const homeBtn = document.getElementById("home-btn")
+
+// home button listener
+homeBtn.addEventListener("click", function() {
+    window.location.href = 'index.html'
+  })
 
 //function to show box information
 function showBoxInfo(boxInfo) {

@@ -18,6 +18,13 @@ const backBtn3 = document.getElementById("back-btn3");
 const backBtn4 = document.getElementById("back-btn4");
 const backBtn5 = document.getElementById("back-btn5");
 
+const homeBtn = document.getElementById("home-btn")
+
+// home button listener
+homeBtn.addEventListener("click", function() {
+    window.location.href = 'index.html'
+  })
+
 //function to show box information
 function showBoxInfo(boxInfo) {
     document.querySelector(".initial").classList.add("hidden");

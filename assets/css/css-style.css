@@ -7,3 +7,17 @@
     font-size: 25px;
     color: black;
 }
+
+#home-btn {
+    padding: 2%;
+    background-color: rgb(255, 136, 0);
+    border: none;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#home-btn:hover {
+    transform: scale(1.2);
+}
