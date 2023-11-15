@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+    <link rel="stylesheet" href="./assets/css/cards-style.css"> 
+    <link rel="stylesheet" href="./assets/css/javascript-style.css"> 
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <main>
+      <section class="initial">
+        <img id="arcade-img" src="./assets/arcade-background.jpg">
+        <div class="container">
+          <div class="whole">
+            <div class="header">
+              <!-- <button id="home-btn">Home</button> -->
+              <h1>JavaScript</h1>
+            </div>
+            <div class="cards">
+              <div id="box1"><p>Basics</p></div>
+              <div id="box2"><p>Loops</p></div>
+              <div id="box3"><p>Functions</p></div>
+            </div>
+            <div class="cards">
+              <div id="box4"><p>Conditional Statements</p></div>
+              <div id="box5"><p>Methods and Objects</p></div>
+              <div id="box6"><p>APIs</p></div>
+            </div>
+            <div class="cards">
+              <div id="box7"><p>jQuery</p></div>
+            </div>
+          </div>
+          <button id="home-btn">Home</button>
+        </div> 
+      </section>
+      <!-- basics -->
+      <section class="hidden" id="box1-info">
+        <p>JavaScript is what allows a user to interact with the site</p>
+        <br>
+        <h2>Basics</h2>
+        <img src="./assets/format.png">
+        <ul class="keyword">
+          <li><span>variables</span> store value and can be declared 4 ways: automatically or with the keywords <span>var</span>, <span>let</span>, or <span>const</span>. Types of variables:</li>
+            <ul>
+              <li><span>undefined</span>: variable with no value</li>
+              <li><span>string</span>: series of characters in single or double quotes</li>
+              <li><span>number</span>: whole or decimal, no quotes</li>
+              <li><span>booleans</span>: test true or false</li>
+                <ul>
+                  <li>* type is tied to the value, not the variable</li>
+                </ul>
+            </ul>
+          <li><span>arrays</span> store multiple items under a single variable name, go inside <span>[brackets]</span></li>
+          <li><span>logical comparison</span> test equality or difference between variable/values.
+            <ul>
+              <li><span>==</span> equal to</li>
+              <li><span>===</span> equal value and type</li>
+              <li><span>!=</span> not equal</li>
+              <li><span>!==</span> not equal value or type</li>
+              <li><span>></span> greater than</li>
+              <li><span><</span> less than</li>
+              <li><span>>=</span> greater or equal to</li>
+              <li><span><=</span> less or equal to</li>
+            </ul>
+            <li><span>logical operators</span> test if a statement is true or false and logical between variables and values</li>
+              <ul>
+                <li><span>&&</span> and</li>
+                <li><span>||</span> or</li>
+                <li><span>!</span> not</li>
+              </ul>
+        </ul>
+        <button id="back-btn1">Back</button>
+      </section>
+      <!-- loops -->
+      <section class="hidden" id="box2-info">
+        <h2>Loops</h2>
+        <p class="keyword"><span>For loops</span> loop through a block of code a number of times</p>
+        <img src="./assets/for-loop.png">
+        <p>3 statements in a for loop:</p>
+            <ul class="keyword">
+              <li><strong> starting point:</strong> <span> i = 0</span> starts loop at beginning of array</li>
+              <li><strong>condition:</strong> <span>i &lt; array.length</span> length of array, which determines how long loop will run </li>
+              <li><strong>final:</strong> what allows the array to iterate over each item. <span>i++</span> makes sure every time the code loops, it increases by one</li>
+            </ul>
+        <p class="keyword"><span>While</span> loops through a block of code while a specified condition is true</p>
+        <img src="./assets/while-loop.png">
+        <p class="keyword"><span>For in loops</span> loop through the properties of an object</p>
+        <img src="./assets/for-in-loop.png">
+        <p class="keyword"><span>For of loops</span> loop through the values of an iterable object</p>
+        <img src="./assets/for-of-loop.png">
+        <button id="back-btn2">Back</button>
+      </section>
+      <!-- functions -->
+      <section class="hidden" id="box3-info">
+        <h2>Functions</h2>
+        <p>Functions are usable blocks of code that perform specific tasks. They should only ever have one job.<p>
+        <br>
+        <h2>Functions vs function expressions</h2>
+          <ul class="keyword">
+            <li><span>functions</span> load before any code is executed, global</li>
+            <li><span>function expressions</span> load only when that line is reached, local</li>
+          </ul>
+          <button id="back-btn3">Back</button>
+      </section>
+      <!-- conditional statements -->
+      <section class="hidden" id="box4-info">
+        <h2>Conditional Statements</h2>
+        <p>Conditional statements perform different actions based on different conditions.</p>
+        <br>
+        <ul class="keyword">
+          <li><span>if</span> specifies code to be executed if condition is true, keep checking no matter what</li>
+          <li><span>else if</span> specifies new condition to test if 1st is false</li>
+          <li><span>else</span> specifies code to be executed if condition is false, stops it from checking for more conditions</li>
+        </ul>
+        <button id="back-btn4">Back</button>
+      </section>
+      <!-- methods and objects -->
+      <section class="hidden" id="box5-info">
+        <h2>Methods and Objects</h2>
+        <p><strong>Methods</strong> are  actions that can be performed on objects; they are propertyies containing a function definition. <strong>Objects</strong> are collections of properties.</p>
+        <br>
+        <p>Methods</p>
+        <ul class="keyword">
+          <li>a method is a property containing a function definition, attached to variables/objects</li>
+          <li><span>this</span> is a keyword that refers to an object. Which object depends on how it's being used/called.</li>
+            <ul class="keyword">
+              <li><span>this</span> alone and in a function refers to the <strong>global object</strong></li>
+              <li><span>this</span> in a function in strict mode is <strong>undefined</strong></li>
+              <li><span>this</span> in an event refers to the <strong>element</strong> that recieved the event</li>
+              <li>methods like <span>call()</span>, <span>apply()</span>, and <span>bind()</span> can refer <span>this</span> to any object</li>
+            </ul>
+            <li>You can access a object with the following syntax:</li>
+            <img src="./assets/object-call.png">
+          </ul>
+          <p>Objects</p>
+          <ul class="keyword">
+            <li>a collection of properties with <span>{</span> right after the assignment
+              <ul>
+                <li>properties are made up of key-value pairs</li>
+              </ul>
+              <img src="./assets/object.png">
+              <ul>
+                <li> to access property's value, use the object's name associated key</li>
+              </ul>
+              <pre class="code-ex"><code>
+                console.log(planet.name);
+              </code></pre>
+          </ul>
+          <button id="back-btn5">Back</button>
+      </section>
+      <!-- APIs -->
+      <section class="hidden" id="box6-info">
+        <h2>APIs</h2>
+        <p>APIs are constructs made available in programming languages to allwo developers to create complex functionality more easily. It's a set of methods, properties, events, and URLs that allow interaction with a web browser.</p>
+        <button id="back-btn6">Back</button>
+      </section>
+      <!-- jQuery -->
+      <section class="hidden" id="box7-info">
+        <h2>jQuery</h2>
+        <button id="back-btn7">Back</button>
+      </section>
+    </main>
+
+
+    <script src="./assets/script.js"></script>
+    <script src="./assets/js/javascript-script.js"></script>
+  </body>
+</html>

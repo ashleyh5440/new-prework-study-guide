@@ -1,0 +1,36 @@
+.whole {
+    container-type: inline-size; 
+}
+
+.back-continue-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#screen1, #screen2 {
+    container-type: inline-size;
+}
+
+#home-btn {
+    padding: 2%;
+    background-color: rgb(255, 136, 0);
+    border: none;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 25px;
+    margin-left: 10%;
+    /* margin-top: 5%; */
+}
+
+#home-btn:hover {
+    transform: scale(1.2);
+}
+
+#previous-btn, #continue-btn {
+    padding: 1%;
+    background-color: rgb(255,0,137);
+    border: none;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+    margin: 3%;
+}

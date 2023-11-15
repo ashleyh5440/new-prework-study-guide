@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+    <link rel="stylesheet" href="./assets/css/cards-style.css">
+    <link rel="stylesheet" href="./assets/css/command-style.css">
+    <title>Commands</title>
+  </head>
+  <body>
+    <main>
+      <section class="initial">
+        <img id="arcade-img" src="./assets/arcade-background.jpg">
+        <div class="container">
+          <div class="whole">
+            <div class="header">
+              <h1>Commands</h1>
+            </div>
+            <div id="screen1">
+              <ul class="keyword">
+                <li><span>pwd</span> current working directory</li>
+                <li><span>ls</span> list of files/folders</li>
+                <li><span>cd</span> takes you to home directory</li>
+                <li><span>cd [destination]</span> move between directories</li>
+                <li><span>cd ..</span> navigate backwards in directory</li>
+                <li><span>cd [destination]</span> move between directories</li>
+                <li><span>cd ..</span> navigate backwards in directory</li>
+                <li><span>mkdir [directory name]</span> creates new directory</li>
+                <li><span>rm -rf [directory name]</span> deletes directory
+                <li><span>touch [file name]</span> creates file in directory</li>
+                <li><span>rm [file name]</span> deletes file in directory
+                <li><span>start</span> opens a file</li>
+                <li><span>git status</span> shows current branch, checks if you're in a repo</li>
+                <li><span>git checkout -b [branch name]</span> creates new branch</li>
+              </ul>
+            </div>
+            <div class="hidden" id="screen2">
+              <ul class="keyword">
+                <li><span>git clone [paste SSH key or HTTPS]</span><li> clones repo to machine
+                <li><span>git pull origin [branch name]</span> syncs local branch with main branch</li>
+                <li><span>git push origin [branch name]</span> pushes local changes to GitHub branch</li>
+                <li><span>git commit -m "[comments]"</span> adds commits to the repo</li>
+                <li>To push local changes to GitHub, do the following steps:</li>
+                  <ol>
+                    <li><span>git add -A</span></li>
+                    <li><span>git commit -m "[comments]"</span></li>
+                    <li><span>git push origin [branch name]</span></li>
+                  </ol>
+              </ul>
+              <p><span>Helpful links<span></p>
+                <ul>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#basic_built-in_terminal_commands">Command line crash course</a></li>
+                  <li><a href="https://medium.com/@saurabhdahibhate50/devops-day-12-task-ec437bc30715">Cheat sheet for Bash/GitHub</a></li>
+                </ul>
+            </div>
+            <div class="back-continue-buttons">
+              <button id="previous-btn">Previous</button>
+              <button id="continue-btn">Continue</button>
+            </div>
+          </div>
+          <button id="home-btn">Home</button>
+        </div> 
+      </section>
+    </main>
+
+
+    <script src="./assets/script.js"></script>
+    <script src="./assets/js/javascript-script.js"></script>
+  </body>
+</html>
