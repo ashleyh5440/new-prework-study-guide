@@ -1,54 +1,67 @@
-section {
-    position: relative;
+body {
+    background-color: black;
 }
 
-#arcade-img {
-    position: relative;
-    width: 100%;
+h1 {
+    animation: none;
 }
 
-.container {
-    border: 5px solid red;
-    position: absolute;
-    width: 75%;
-    height: 67%;
-    bottom: 14%;
-    left: 12%;
+h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Pixelify Sans', sans-serif;
 }
 
-.whole {
-    border: 5px solid blue;
-    width: 99%;
-    display: flex;
-    flex-direction: column;
+p {
+    font-size: 23px;
+    color: white;
 }
 
-.cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+li {
+    font-size: 23px;
+    color: white;
 }
 
+.keyword li span {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: rgb(129,120,255);
+    font-size: 25px;
+}
 
+.box1-info {
+    display: none;
+}
 
-#card1, #card2, #card3, #card4, #card5, #card6 {
-    border: 5px solid green;
-    padding: 5%;
+.box2-info {
+    display: none;
+}
+
+.box3-info {
+    display: none;
+}
+
+#box1, #box2, #box3 {
+    background-color: rgb(129,120,255);
+    width: 26%;
     margin-top: 5%;
+    text-align: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 25px;
+    color: black;
 }
 
+#box1:hover {
+    transform: scale(1.2);
+}
 
+#box2:hover {
+    transform: scale(1.2);
+}
 
+#box3:hover {
+    transform: scale(1.2);
+}
 
-
-
-/* body {
-    background-image: url('arcade-background.jpg');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: center top;
-} */
 
 
 
