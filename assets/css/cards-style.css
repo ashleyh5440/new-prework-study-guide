@@ -28,15 +28,21 @@ li {
     font-size: 25px;
 }
 
+.keyword span {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: rgb(129,120,255);
+    font-size: 25px;
+}
+
 .box1-info, .box2-info, .box3-info {
     margin: 5%;
 }
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
-#back-btn1, #back-btn2, #back-btn3 {
+#back-btn1, #back-btn2, #back-btn3, #back-btn4, #back-btn5, #back-btn6 {
     padding: 2%;
     background-color: rgb(35,255,0);
     border: none;
@@ -55,7 +61,7 @@ li {
     transform: scale(1.2);
 }
 
-#box1, #box2, #box3 {
+#box1, #box2, #box3, #box4, #box5, #box6 {
     background-color: rgb(129,120,255);
     width: 26%;
     margin-top: 5%;
@@ -74,5 +80,17 @@ li {
 }
 
 #box3:hover {
+    transform: scale(1.2);
+}
+
+#box4:hover {
+    transform: scale(1.2);
+}
+
+#box5:hover {
+    transform: scale(1.2);
+}
+
+#box6:hover {
     transform: scale(1.2);
 }

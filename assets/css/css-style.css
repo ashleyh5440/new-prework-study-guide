@@ -1,0 +1,9 @@
+#box1, #box2, #box3, #box4, #box5, #box6 {
+    background-color: rgb(255,0,190);
+    width: 26%;
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 25px;
+    color: black;
+}

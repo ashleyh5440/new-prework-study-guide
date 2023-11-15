@@ -4,164 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css"> 
-    <title>Coding Study Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css"> 
+    <link rel="stylesheet" href="./assets/css/cards-style.css"> 
+    <link rel="stylesheet" href="./assets/css/css-style.css"> 
+    <title>CSS</title>
   </head>
   <body>
-    <nav class="heading-links">
-      <br>
-  <!-- makes these links to different sections of the page -->
-      <a href="#git-section">GitBash/Command Line</a>
-      <a href="#github-section">GitHub</a>
-      <a href="#html-section">HTML</a>
-      <a href="#css-section">CSS</a>
-      <a href="#javascript-section">JavaScript</a>
-      <!-- <a href="#link-section">Useful Links</a> -->
-    </nav>
-    <header id="top">
-      <br>
-      <h1 id="title">✨ Coding Study Guide ✨</h1>
-      <img src="./assets/cat-crazt-blue-cat.gif" alt="Profile image of cat wearing a bow tie." />
-    </header>
-
     <main>
-      <section class="card" id="git-section">
-        <h2>Git Bash/Command Line</h2>
-        <ul class="keyword">
-  <!-- the <span> tag is how I was able to change the font and color of the keywords -->
-          <li><span>pwd</span> current working directory</li>
-          <li><span>ls</span> list of files/folders</li>
-          <li><span>cd</span> takes you to home directory</li>
-          <li><span>cd [destination]</span> move between directories</li>
-          <li><span>cd ..</span> navigate backwards in directory</li>
-          <li><span>mkdir [directory name]</span> creates new directory</li>
-          <li><span>rm -rf [directory name]</span> deletes directory
-          <li><span>touch [file name]</span> creates file in directory</li>
-          <li><span>rm [file name]</span> deletes file in directory
-          <li><span>start</span> opens a file</li>
-          <li><span>git status</span> shows current branch, checks if you're in a repo</li>
-          <li><span>git checkout -b [branch name]</span> creates new branch</li>
-          <li><span>git clone [paste SSH key or HTTPS]</span><li> clones repo to machine
-          <li><span>git pull origin [branch name]</span> syncs local branch with main branch</li>
-          <li><span>git push origin [branch name]</span> pushes local changes to GitHub branch</li>
-          <li><span>git commit -m "[comments]"</span> adds commits to the repo</li>
-          <li>To push local changes to GitHub, do the following steps:</li>
-            <ol>
-              <li><span>git add -A</span></li>
-              <li><span>git commit -m "[comments]"</span></li>
-              <li><span>git push origin [branch name]</span></li>
-            </ol>
-        </ul>
-        <br>
-        <h3>Helpful links</h3>
-        <ul>
-          <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#basic_built-in_terminal_commands">Command line crash course</a></li>
-          <li><a href="https://medium.com/@saurabhdahibhate50/devops-day-12-task-ec437bc30715">Cheat sheet for Bash/GitHub</a></li>
-        </ul>
+      <section class="initial">
+        <img id="arcade-img" src="./assets/arcade-background.jpg">
+        <div class="container">
+          <div class="whole">
+            <div class="header">
+              <h1>CSS</h1>
+            </div>
+            <div class="cards">
+              <div id="box1"><p>Attributes</p></div>
+              <div id="box2"><p>Display</p></div>
+              <div id="box3"><p>Flexbox</p></div>
+            </div>
+            <div class="cards">
+              <div id="box4"><p>Pseudo Classes and Elements</p></div>
+              <div id="box5"><p>Helpful tips and links</p></div>
+            </div>
+          </div>
+        </div> 
       </section>
-      <section class="card" id="github-section">
-        <h2>GitHub</h2>
-        <ul class="select">
-          <li>To create a new repository in GitHub:</li>
-          <ol>
-            <li>Select <span>New repository</span> and type in the name</li>
-            <li>Select <span>Public</span> or <span>Private</span></li>
-            <li>Select <span>Add a README file</span></li>
-            <li>Click <span>Create repository</span></li>
-          </ol>
-        </ul>
-        <ul class="select">
-          <li>To clone a repository:</li>
-          <ol>
-            <li>Navigate to the main page of repository</li>
-            <li>Click <span>&lt;&gt;Code</span></li>
-            <li>Copy URL using SSH key</li>
-            <li>In Bash, put in <span>git clone [paste SSH link]</span></li>
-          </ol>
-        </ul>
-      </section>
-      <section class="card" id="html-section">
-        <h2>HTML</h2>
-        <br>
-          <h3>Semantic elements</h3>
+      <section class="hidden" id="box1-info">
+        <p>Three ways to style CSS: inline CSS, internal CSS stylesheet, external CSS stylesheet</p>
           <br>
-            <p>Semantic elements have meaning on their own and cleary describe that meaning to browser and develper</p>
-            <br>
-              <ul class="keyword">
-                <li><span>h1-h6</span> defines HTML headings</li>
-                <li><span>p</span> defines a paragraph</li>
-                <li><span>title</span> defines a title for the document</li>
-                <li><span>form</span> defines an HTML form for user input</li>
-                <li><span>table</span> defines a table</li>
-                <li><span>article</span> defines independent, self-contained content</li>
-                <li><span>aside</span> defines content aside from the page content</li>
-                <li><span>details</span> defines additional details that the user can view or hide</li>
-                <li><span>figcaption</span> defines a caption for a <span>figure</span> element</li>
-                <li><span>figure</span> specifies self-contained content, like illustrations, diagrams, photos, code listings, etc</li>
-                <li><span>footer</span> defines a footer for a document or section</li>
-                <li><span>header</span> specifies a header for a document or section</li>
-                <li><span>nav</span> defines navigation links</li>
-                <li><span>main</span> specifies the main content of a document</li>
-                <li><span>mark</span> defines marked/highlighted text</li>
-                <li><span>section</span> defines a section in a document</li>
-                <li><span>summary</span> defines a visible heading for a <span>details</span> element</li>
-                <li><span>time</span> defines a date/time</li>
-                <li><span>img</span> defines image (self closing)</li>
-                <li><span>head</span> stores metadata, which contains information about the webpage</li>
-                <li><span>pre</span> preserves spaces spaces and line breaks</li>
-                <li><span>code</span> defines a piece of computer code </li>
-                <li><span>a</span> anchor tag, defines a hyperlink</li>
-                <li><span>rel</span> specifies relationship between current doc and linked doc</li>
-                <li><span>label</span> defines a label for an <span>input</span> element</li>
-              </ul>
-          <br>
-          <h3>Non-semantic elements</h3>
-          <br>
-            <p>Non-semantic elements have no meaning on their own and tells you nothing about the content</p>
-              <ul class="keyword">
-                <li><span>br</span> line break</li>
-                <li><span>div</span> section in document</li>
-                <li><span>span</span> allows you to style specific words or phrases</li>
-                <li><span>font</span></li>
-              </ul>
-          <br>
-          <h3>Attributes</h3>
-          <br>
-            <p>Attributes add additonal information to HTML elements</p>
-              <ul class="keyword">
-                <li><span>href</span> specifies the URL of the page the link goes to</li>
-                <li><span>src</span> specifies the path to the image to be displayed</li>
-                <li><span>alt</span> provides an alternate text for an image</li>
-                <li><span>style</span> attribute is used to add styles to an element</li>
-                <li><span>lang</span> declares the language of the Web page</li>
-                <li><span>title</span>  defines some extra information about an element</li>
-        </ul>
-        <br>
-        <h3>Helpful tips and links</h3>
-        <br>
-          <ul class="keyword">
-            <li><span>!</span> in a blank html file auto-fills the bare bones of the file</li>
-            <li><a href="https://www.w3schools.com/TAGS/ref_byfunc.asp">HTML tags</a></li>
-            <li><a href="https://coding-boot-camp.github.io/full-stack/html/html-cheatsheet">HTML cheatsheet</a></li>
-            <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML Semantic Elements</a></li>
-            <li><a href="https://www.w3schools.com/html/html_attributes.asp">HTML attributes</a></li>
-          </ul>
-      </section> 
-      <section class="card" id="css-section">
-        <h2>CSS</h2>
-        <br>
-          <p>Three ways to style CSS: inline CSS, internal CSS stylesheet, external CSS stylesheet</p>
-          <br>
-            <ul>
-              <li>inline CSS: style directly in HTML file, apply to specific tag</li>
-                <pre class="code-ex"><code>
-  &lt;h1 style="color: red"&gt; Rework Study Guide &lt;/h1&gt;
-          </code></pre>
-              <li>internal stylesheet: embed entire stylesheet directly in HTML file, applies to whole page</li>
-              <li>external stylesheet: most common, keeps CSS rules in separate file</li>
+            <ul class="keyword">
+              <li><span>inline CSS</span>: style directly in HTML file, apply to specific tag</li>
+                <p>&lt;h1 style="color: red"&gt; Rework Study Guide &lt;/h1&gt;</p>
+              <li><span>internal stylesheet</span>: embed entire stylesheet directly in HTML file, applies to whole page</li>
+              <li><span>external stylesheet</span>: most common, keeps CSS rules in separate file</li>
             </ul>
           <br>
-          <h3>Attributes/Formatting</h3>
+          <h2>Attributes/Formatting</h2>
             <br>
             <ul class="keyword">
               <li><span>*</span> universal selector, effects everything on the page</li>
@@ -170,8 +50,10 @@
               <li><span>#</span> id selector, effects everything with that id, can only be used once</li>
               <li><span>,</span> combines two selectors into a single CSS rule so declarations affect both</li>
             </ul>
-          <br>
-          <h3>Display</h3>
+            <button id="back-btn1">Back</button>
+      </section>
+      <section class="hidden" id="box2-info">
+        <h2>Display</h2>
             <ul class="keyword">
               <li><span>color</span> effects text color</li>
               <li><span>background-color</span> effects the color of the container</li>
@@ -184,7 +66,7 @@
               <li><span>media query</span> makes the design responsive based on certian conditions, i.e. screen size</li>
             </ul>
           <br>
-          <h3>Box Model</h3>
+          <h2>Box Model</h2>
             <ul class="keyword">
               <li><span>content</span> made up of the height and width of content</li>
               <li><span>padding</span> indicates how much space is around the content inside an element</li>
@@ -197,52 +79,50 @@
                   <li>* border, padding, and margin get applied clockwise: top, right, bottom, left</li>
                 </ul>
             </ul>
-          <br>
-          <button class="accordion"><strong>Flexbox &#8595</strong></button>
-          <div class="panel">
-            <ul class="keyword">
-              <li><span>justify-content</span> effects items on the <strong>x axis</strong></li>
-                <img class="flexbox" src="./assets/justify-content.png" alt="orange boxes arranged in rows according to justify-content">
-              <li><span>align-items</span> effects items on the <strong>y axis</strong></li>
-                <img class="flexbox" src="./assets/align-items.png" alt="orange boxes arranged in columns according to align-items">
-              <li><span>flex-direction</span> puts items in rows or coulmns</li>
-                <img class="flexbox" src="./assets/flex-direction.png" alt="orange boxes arranged in columns and rows according to flex-direction">
-                  <ul>
-                    <li>when direction is <span>row/column-reverse</span>, <span>flex-start</span> and <span>flex-end</span> are also reversed</li>
-                    <li>when direction is <span>column</span> or <span>column-reverse</span>, <span>justify-content</span> changes to the <strong>y axis</strong> and <span>align-items</span> to the <strong>x axis</strong></li>
-                  </ul>
-              <li><span>order</span> changes/controls the items appear on the screen on the x axis</li>
+            <button id="back-btn2">Back</button>
+      </section>
+      <section class="hidden" id="box3-info">
+        <h2>Flexbox</h2>
+        <ul class="keyword">
+          <li><span>justify-content</span> effects items on the <strong>x axis</strong></li>
+            <img class="flexbox" src="./assets/justify-content.png" alt="orange boxes arranged in rows according to justify-content">
+          <li><span>align-items</span> effects items on the <strong>y axis</strong></li>
+            <img class="flexbox" src="./assets/align-items.png" alt="orange boxes arranged in columns according to align-items">
+          <li><span>flex-direction</span> puts items in rows or coulmns</li>
+            <img class="flexbox" src="./assets/flex-direction.png" alt="orange boxes arranged in columns and rows according to flex-direction">
+              <ul>
+                <li>when direction is <span>row/column-reverse</span>, <span>flex-start</span> and <span>flex-end</span> are also reversed</li>
+                <li>when direction is <span>column</span> or <span>column-reverse</span>, <span>justify-content</span> changes to the <strong>y axis</strong> and <span>align-items</span> to the <strong>x axis</strong></li>
+                <li><span>order</span> changes/controls the items appear on the screen on the x axis</li>
                 <img class="flexbox" src="./assets/order.png" alt="">
               <li><span>align-self</span> changes/controls the items appear on the screen on the y axis</li>
                 <img class="flexbox" src="./assets/align-self.png" alt="">
               <li><span>flex-flow</span> combination of <span>flex-direction</span> and <span>flex-wrap</span>, accepts the properties of both</li>
               <li><span>align-content</span> decides how multiple lines of items are spaced apart from each other</li>
                 <img class="flexbox" src="./assets/align-content.png" alt="">
-            </ul>
-          </div>
-          <br>
-          <h3>Pseudo Classes and Pseudo Elements</h3>
-            <p><strong>Pseudo classes</strong> define a special state of an element, ex. changing the color when the mouse hovers over it. They act as if a class was applied to some part of the document. Start with a single colon directly after the selector. Example below makes a button blue when hovered over:</p>
-                      <pre class="code-ex"><code>
-        button:hover {
-         color: blue;
-        }
-                      </code></pre>
-            <p><strong>Pseudo elements</strong> styles specific parts of an element. Act as if a new HTML element was added to the document. Start with a double colon directly after the selector. Example below changes the font and color of the first line in a paragraph: </p>
-                    <pre class="code-ex"><code>
-      p::first-line {
-       color: blue;
-       font-variant: small-caps;
-      }
-                    </code></pre>
-        <br>
-        <h3>Helpful tips and links</h3>
-        <br>
+              </ul>
+              <button id="back-btn3">Back</button>
+      </section>
+      <section class="hidden" id="box4-info">
+        <h2>Pseudo Classes and Pseudo Elements</h2>
+        <p class="keyword"><span>Pseudo classes</span> define a special state of an element, ex. changing the color when the mouse hovers over it. They act as if a class was applied to some part of the document. Start with a single colon directly after the selector. Example below makes a button blue when hovered over:</p>
+        <p>button:hover {<br>
+     color: blue;<br>
+        }</p>
+        <p class="keyword"><span>Pseudo elements</span> styles specific parts of an element. Act as if a new HTML element was added to the document. Start with a double colon directly after the selector. Example below changes the font and color of the first line in a paragraph: </p>
+        <p>p::first-line {<br>
+   color: blue;<br>
+   font-variant: small-caps;<br>
+  }</p>
+  <button id="back-btn4">Back</button>
+      </section>
+      <section class="hidden" id="box5-info">
+        <h2>Helpful tips and links</h2>
           <ul class="keyword">
             <li>try to use percentages as much as possible to cut down on the number of media queries you'll have to make as screen sizes change</li>
             <li>emojis are called unicodes and can be copied and pasted or put in through codes</li>
             <li>if you only have two values for margin/padding/border, the other two just repeat what's there</li>
-            <li><span>resets</span> are stylesheets that are used to override the brower's default styles and make sure developers know the sizes of things; they always go above the <span>style.css</span><li>
+            <li><span>resets</span> are stylesheets that are used to override the brower's default styles and make sure developers know the sizes of things; they always go above the <span>style.css</span></li>
             <li><a href="https://www.w3schools.com/cssref/css_selectors.php">CSS selectors</a></li>
             <li><a href="https://flukeout.github.io/">CSS diner</a> CSS selectors game</li>
             <li><a href="https://www.w3schools.com/css/css_display_visibility.asp">CSS display</a></li>
@@ -251,202 +131,11 @@
             <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guide to flexbox</a></li>
             <li><a href="https://flexboxfroggy.com/">flexboxfroggy</a> CSS flexbox game 
           </ul>
-      </section>
-      <section class="card" id="javascript-section">
-        <h2>JavaScript</h2>
-        <br>
-        <p>JavaScript is what allows a user to interact with the site</p>
-        <br>
-        <h3>Format</h3>
-        <pre class="code-ex">
-          keyword  variable name  assignment  value   termination
-           <code> var       character       =     Snow White  ;</code>
-        </pre>
-        <ul class="keyword">
-          <li><span>variables</span> store value and can be declared 4 ways: automatically or with the keywords <span>var</span>, <span>let</span>, or <span>const</span>. Types of variables:</li>
-            <ul>
-              <li><span>undefined</span>: variable with no value</li>
-              <li><span>string</span>: series of characters in single or double quotes</li>
-              <li><span>number</span>: whole or decimal, no quotes</li>
-              <li><span>booleans</span>: test true or false</li>
-                <ul>
-                  <li>* type is tied to the value, not the variable</li>
-                </ul>
-            </ul>
-          <li><span>arrays</span> store multiple items under a single variable name, go inside <span>[brackets]</span></li>
-          <li><span>logical comparison</span> test equality or difference between variable/values.
-            <ul>
-              <li><span>==</span> equal to</li>
-              <li><span>===</span> equal value and type</li>
-              <li><span>!=</span> not equal</li>
-              <li><span>!==</span> not equal value or type</li>
-              <li><span>></span> greater than</li>
-              <li><span><</span> less than</li>
-              <li><span>>=</span> greater or equal to</li>
-              <li><span><=</span> less or equal to</li>
-            </ul>
-            <li><span>logical operators</span> test if a statement is true or false and logical between variables and values</li>
-              <ul>
-                <li><span>&&</span> and</li>
-                <li><span>||</span> or</li>
-                <li><span>!</span> not</li>
-              </ul>
-        </ul>
-        <h3> For loops</h3>
-        <br>
-        <pre class="code-ex"><code>      for (let i = 0; i &lt; array.length; i++) {
-          const element = array[i]; 
-          
-        }</code></pre>
-        <p>3 statements in a for loop:</p>
-            <ul class="keyword">
-              <li><strong> starting point:</strong> <span> i = 0</span> starts loop at beginning of array</li>
-              <li><strong>condition:</strong> <span>i &lt; array.length</span> length of array, which determines how long loop will run </li>
-              <li><strong>final:</strong> what allows the array to iterate over each item. <span>x++</span> makes sure every time the code loops, it increses by one</li>
-            </ul>
-        <br>
-        <h3>Functions</h3>
-        <br>
-        <p>Functions are usable blocks of code that perform specific tasks. They should only ever have one job.<p>
-        <br>
-        <h4>Functions vs function expressions</h4>
-          <ul class="keyword">
-            <li><span>functions</span> load before any code is executed, global</li>
-            <li><span>function expressions</span> load only when that line is reached, local</li>
-          </ul>
-        <br>
-        <h3>Conditional Statements</h3>
-        <br>
-        <p>Conditional statements perform different actions based on different conditions.</p>
-        <br>
-        <ul class="keyword">
-          <li><span>if</span> specifies code to be executed if condition is true, keep checking no matter what</li>
-          <li><span>else if</span> specifies new condition to test if 1st is false</li>
-          <li><span>else</span> specifies code to be executed if condition is false, stops it from checking for more conditions</li>
-        </ul> 
-        <br>
-        <h3>Methods and Objects</h3>
-        <br>
-        <p><strong>Methods</strong> are  actions that can be performed on objects; they are propertyies containing a function definition. <strong>Objects</strong> are collections of properties.</p>
-        <br>
-        <p>Methods</p>
-        <br>
-        <ul>
-          <li>a method is a property containing a function definition, attached to variables/objects</li>
-          <li><span>this</span> is a keyword that refers to an object. Which object depends on how it's being used/called.
-            <ul class="keyword">
-              <li><span>this</span> alone and in a function refers to the <strong>global object</strong></li>
-              <li><span>this</span> in a function in strict mode is <strong>undefined</strong><li>
-              <li><span>this</span> in an event refers to the <strong>element</strong> that recieved the event</li>
-              <li>methods like <span>call()</span>, <span>apply()</span>, and <span>bind()</span> can refer <span>this</span> to any object</li>
-            </ul>
-            <li>You can access a object with the following syntax:</li>
-            <pre class="code-ex"><code>objectName.methodName()</code></pre>
-          </ul>
-          <br>
-          <p>Objects</p>
-          <br>
-          <ul class="keyword">
-            <li> have a <span>{</span> right after the assignment; a collection of properties
-              <ul>
-                <li>properties are made up of key-value pairs</li>
-              </ul>
-            <pre class="code-ex"><code>
-              var planet = {
-              name: "Earth",
-              age: "4.543 billion years",
-              moons: 1,
-              } </code></pre>
-              <ul>
-                <li> to access property's value, use the object's name associated key</li>
-              </ul>
-              <pre class="code-ex"><code>
-                console.log(planet.name);
-              </code></pre>
-          </ul>
-        <h3>APIs</h3>
-        <br>
-        <p>APIs are constructs made available in programming languages to allwo developers to create complex functionality more easily. It's a set of methods, properties, events, and URLs that allow interaction with a web browser.</p>
-        
-          
-
-        <!-- <ul class="keyword">
-          <li>variables: containers that store values. Start with <span>let</span> keyword followed by variable name</li>
-          <pre><code class="code-ex">
-            let myVariable;
-          </code></pre>
-          <li><span>comments</span> text that can be added to code, ignored by browser</li>
-          <pre class="code-ex"><code>
-         /*
-           Everything in between is a comment
-         */
-          </code></pre>
-          <li>operators: mathematical symbols that produce results based on two values/variables</li>
-          <li>conditionals: code structures used to test if an expression returns true. Commonly seen as if . . . else statements</li>
-              <pre class="code-ex"><code>
-            let iceCream = "chocolate";
-            if (iceCream === "choclate") { 
-              alert ("Yay, I love chocolate ice cream!");
-            } else {
-               alert ("Awwww, but chocolate is my favorite . . .");
-                }
-              </code></pre>
-          <li>function: way of packaging functionality to reuse. Often take on aguments</li>
-          <ul>
-            <li>let myVariable = document.querySelector (h1);</li>
-          </ul>
-          <li>argument: value passed as input  a function</li>
-          <li>event handlers: code structures hat listen for activity in the browser and run code in response. Example is the click event, when you click something with the mouse</li>
-          <li> var topics = "HTML, CSS, Git, JavaScript";</li>
-            <ul>
-              <li>var: declares a variable</li>
-              <li>topics: name of the variable/container</li>
-              <li>". . .": data stored by the variable/container, called a string</li>
-            </ul>
-          <li>console.log: method to output a message to web console by adding an argument </li>
-          <ul>
-            <li>console: test environment developers use to check code</li>
-            <li>.log: method that outputs content in parentheses to the console</li>
-          </ul>
-          <li>is statement: code will only execute if the statement is true/meets a condition</li>
-          <ul>
-            <li>if (condition) { <br>
-            // block of code to be executed<br>
-            }</li>
-          </ul>
-          <li>array: variable that holds a group of data, usually data that's related</li>
-          <ul>
-            <li>Ex: var shapes = ["triangle", "square", "pentagon", "circle"];</li>
-          </ul>
-          <li>index: identifies the location/order of data in an array. Starts at 0</li>
-          <li>for loop: uses predictable pattern to perform a task on all items in array by allowing a single block ofcode to un over and over</li>
-          <ul>
-            <li>3 statements in a for loop:</li>
-            <ul>
-              <li>starting point: <strong>var x=0</strong> starts loop at beginning of array</li>
-              <li>condition: <strong>x&lt;shapes.length;</strong> length of array, which determines how long loop will run </li>
-              <li>final: what allows the array to iterate over each item. <strong>x++</strong> makes sure every time the code loops, it increses by one</li>
-            </ul>
-            <li>var shapes =["triangle", "square", "pentagon", "circle"];<br>
-              for (var x=0; &lt;shapes.length; x++){ <br>
-              console.log(shapes[x]);<br>
-            }
-            </li>
-          </ul>
-          <li>function: set of instructions in JavaScript that tells computer how to act</li>
-          <pre class="code-ex"><code>
-            function helloWorld () {
-            // code block
-            }
-          </code></pre>
-        </ul> -->
+          <button id="back-btn5">Back</button>
       </section>
     </main>
 
-    <footer>
-      <p class="footer-text">Penn LPS 2023-2024 Coding Bootcamp</p>
-      <!--why is this not in the footer?-->
-    </footer>
-    <script src="./assets/script.js"></script>
+    <script src="./assets//js/script.js"></script>
+    <script src="./assets//js/css-script.js"></script>
   </body>
 </html>

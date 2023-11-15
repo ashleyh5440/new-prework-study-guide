@@ -35,9 +35,6 @@ function handleBackBtnClick() {
     box1Info.classList.add("hidden");
     box2Info.classList.add("hidden");
     box3Info.classList.add("hidden");
-    box4Info.classList.add("hidden");
-    box5Info.classList.add("hidden");
-    box6Info.classList.add("hidden");
 }
 //calls function to show box info for each box
 box1.addEventListener("click", function () {
@@ -52,57 +49,6 @@ box3.addEventListener("click", function () {
     showBoxInfo(box3Info);
 });
 
-// box4.addEventListener("click", function () {
-//   showBoxInfo(box4Info);
-// });
-
-// box5.addEventListener("click", function () {
-//   showBoxInfo(box5Info);
-// });
-
-// box6.addEventListener("click", function () {
-//   showBoxInfo(box6Info);
-// });
-
 backBtn1.addEventListener("click", handleBackBtnClick);
 backBtn2.addEventListener("click", handleBackBtnClick);
 backBtn3.addEventListener("click", handleBackBtnClick);
-// backBtn4.addEventListener("click", handleBackBtnClick);
-// backBtn5.addEventListener("click", handleBackBtnClick);
-// backBtn6.addEventListener("click", handleBackBtnClick);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
