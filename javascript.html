@@ -31,7 +31,8 @@
               <div id="box6"><p>APIs</p></div>
             </div>
             <div class="cards">
-              <div id="box7"><p>jQuery</p></div>
+              <div id="box7"><p>JavaScript Libraries</p></div>
+              <div id="box8"><p>Handy Dandy Tools</p></div>
             </div>
           </div>
           <button id="home-btn">Home</button>
@@ -155,14 +156,50 @@
       <!-- APIs -->
       <section class="hidden" id="box6-info">
         <h2>APIs</h2>
-        <p>APIs are constructs made available in programming languages to allwo developers to create complex functionality more easily. It's a set of methods, properties, events, and URLs that allow interaction with a web browser.</p>
+        <p>Application Programming Interfaces — APIs — are constructs made available in programming languages to allwo developers to create complex functionality more easily. It's a set of methods, properties, events, and URLs that allow interaction with a web browser.</p>
         <button id="back-btn6">Back</button>
       </section>
-      <!-- jQuery -->
+      <!-- JavaScript Libraries -->
       <section class="hidden" id="box7-info">
+        <h1>JavaScript Libraries</h1>
+        <p>JavaScript libraries are collections of prewritten code snippets. Examples include jQuery, React, D3.js, Node.js, and others.</p>
+        <!-- jQuery -->
         <h2>jQuery</h2>
+        <p>jQuery is a third party JavaScript library. It's purpose is to make JavaScript easier to use.</p>
+        <p>jQuery syntax is tailor-made for selecting HTML elements and performing some action.<br>
+          <ul class="keyword">
+            <li><span>$</span> defines jQuery</li>
+            <li><span>( )</span> find HTML elements</li>
+            <li><span>.__( )</span> action to be performed on the element(s)</li>
+          </ul>
+        <p>Below are some examples:</p>
+        <p class="keyword"><span>$(this).hide()</span> hides the current element.<br>
+        <span>$("p").hide()</span> hides all &lt;p&gt; elements.<br>
+        <span>$(".test").hide()</span> hides all elements with class="test".
+        <span>$("#test").hide()</span> hides the element with id="test".
+        <p>All jQuery must be inside the document ready event:</p>
+        <!-- Node.js -->
+        <h2>Node.js</h2>
+        <p>Node.js is a cross-platform, open-space server that runs JavaScript on the backend and lets you make your own server-side applications with JavaScript. This is done mainly with NPM packages.</p>
+        <ul>
+          <li>Node Package Manager — NPM — packages let you easily use JavaScript modules, blocks of code that can do something</li>
+        </ul>
         <button id="back-btn7">Back</button>
       </section>
+
+      <section class="hidden" id="box8-info">
+        <h1>Handy Dandy Tools</h1>
+        <h2>Local Storage</h2>
+        <p>Local storage stores strings that represent objects in the browser.</p>
+        <ul class="keyword">
+          <li><span>localStorage.setItem</span> saves the information as a string</li>
+          <li><span>localStorage.getItem</span> retrieves the information from local storage to be used/displayed</li>
+        </ul>
+        <p>Local storage works in key-value pairs:</p>
+        <p>localStorage.setItem(key, value);</p>
+        <button id="back-btn7">Back</button>
+      </section>
+
     </main>
 
 

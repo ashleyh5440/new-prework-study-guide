@@ -1,4 +1,4 @@
-#box1, #box2, #box3, #box4, #box5, #box6, #box7 {
+#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8 {
     background-color: rgb(1,218,218);
     width: 26%;
     margin-top: 5%;
@@ -19,5 +19,9 @@
 }
 
 #home-btn:hover {
+    transform: scale(1.2);
+}
+
+#box8:hover {
     transform: scale(1.2);
 }
