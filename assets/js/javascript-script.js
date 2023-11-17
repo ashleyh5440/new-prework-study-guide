@@ -5,6 +5,9 @@ const box4 = document.getElementById("box4");
 const box5 = document.getElementById("box5");
 const box6 = document.getElementById("box6");
 const box7 = document.getElementById("box7");
+const jQueryBox = document.getElementById("jquery-box");
+const nodeJsBox = document.getElementById("node-box");
+const box8 = document.getElementById("box8");
 
 //info boxes
 const box1Info = document.getElementById("box1-info");
@@ -14,6 +17,9 @@ const box4Info = document.getElementById("box4-info");
 const box5Info = document.getElementById("box5-info");
 const box6Info = document.getElementById("box6-info");
 const box7Info = document.getElementById("box7-info");
+const jQueryBoxInfo = document.getElementById("jquery-info")
+const nodeInfo = document.getElementById("node-info")
+const box8Info = document.getElementById("box8-info");
 
 //back buttons
 const backBtn1 = document.getElementById("back-btn1");
@@ -23,6 +29,7 @@ const backBtn4 = document.getElementById("back-btn4");
 const backBtn5 = document.getElementById("back-btn5");
 const backBtn6 = document.getElementById("back-btn6");
 const backBtn7 = document.getElementById("back-btn7");
+const backBtn8 = document.getElementById("back-btn8");
 
 const homeBtn = document.getElementById("home-btn")
 
@@ -48,6 +55,7 @@ function handleBackBtnClick() {
     box6Info.classList.add("hidden");
     box7Info.classList.add("hidden");
 }
+
 //calls function to show box info for each box
 box1.addEventListener("click", function () {
     showBoxInfo(box1Info);
@@ -75,6 +83,23 @@ box6.addEventListener("click", function () {
 
 box7.addEventListener("click", function () {
     showBoxInfo(box7Info);
+});
+
+//listener for jquery box
+jQueryBox.addEventListener('click', function() {
+    if (jQueryBoxInfo.classList.contains('hidden')) {
+        jQueryBoxInfo.classList.remove('hidden');
+    } else {
+        jQueryBoxInfo.classList.add('hidden');
+    }
+});
+
+nodeJsBox.addEventListener('click', function() {
+    if (nodeInfo.classList.contains('hidden')) {
+        nodeInfo.classList.remove('hidden');
+    } else {
+        nodeInfo.classList.add('hidden');
+    }
 });
 
 backBtn1.addEventListener("click", handleBackBtnClick);

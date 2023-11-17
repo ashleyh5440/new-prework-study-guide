@@ -9,7 +9,7 @@ h1 {
 h2 {
     color: white;
     text-align: center;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'DotGothic16', sans-serif;
 }
 
 p {
@@ -23,13 +23,13 @@ li {
 }
 
 .keyword li span {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'DotGothic16', sans-serif;
     color: rgb(129,120,255);
     font-size: 25px;
 }
 
 .keyword span {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'DotGothic16', sans-serif;
     color: rgb(129,120,255);
     font-size: 25px;
 }
@@ -42,11 +42,11 @@ li {
     display: none;
 }
 
-#back-btn1, #back-btn2, #back-btn3, #back-btn4, #back-btn5, #back-btn6, #back-btn7 {
+#back-btn1, #back-btn2, #back-btn3, #back-btn4, #back-btn5, #back-btn6, #back-btn7, #back-btn8, #back-btn9, #back-btn810 {
     padding: 2%;
     background-color: rgb(35,255,0);
     border: none;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'DotGothic16', sans-serif;
     font-size: 25px;
     margin-left: 70%;
 }
@@ -77,12 +77,24 @@ li {
     transform: scale(1.2);
 }
 
-#box1, #box2, #box3, #box4, #box5, #box6, #box7 {
+#back-btn8:hover {
+    transform: scale(1.2);
+}
+
+#back-btn9:hover {
+    transform: scale(1.2);
+}
+
+#back-btn10:hover {
+    transform: scale(1.2);
+}
+
+#box1, #box2, #box3, #box4, #box5, #box6, #box7, #box78, #box9, #box10 {
     background-color: rgb(129,120,255);
     width: 26%;
     margin-top: 5%;
     text-align: center;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'DotGothic16', sans-serif;
     font-size: 25px;
     color: black;
 }
@@ -119,7 +131,7 @@ li {
     padding: 2%;
     background-color: rgb(255, 136, 0);
     border: none;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'DotGothic16', sans-serif;
     font-size: 25px;
     margin-left: 10%;
     margin-top: 5%;

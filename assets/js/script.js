@@ -1,5 +1,4 @@
-const card1 = document.getElementById("card1")
-.addEventListener("click", function() {
+const card1 = document.getElementById("card1").addEventListener("click", function() {
   window.location.href = 'commands.html'
 })
 
