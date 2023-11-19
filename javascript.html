@@ -7,10 +7,30 @@
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css"> 
-    <link rel="stylesheet" href="./assets/css/cards-style.css"> 
-    <link rel="stylesheet" href="./assets/css/javascript-style.css"> 
+    <link rel="stylesheet" href="./assets/css/cards-style.css">
     <title>JavaScript</title>
   </head>
+  <style>
+    #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8 {
+    background-color: rgb(1,218,218)
+  }
+    #jquery-box, #node-box {
+    padding: 2%;
+    background-color: rgb(255, 136, 0);
+    border: none;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 25px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#jquery-box:hover {
+    transform: scale(1.2);
+}
+
+#node-box:hover {
+    transform: scale(1.2);
+}
+  </style>
   <body>
     <main>
       <section class="initial">
@@ -27,13 +47,12 @@
               <div id="box3"><p>Functions</p></div>
             </div>
             <div class="cards">
-              <div id="box4"><p>Conditional Statements</p></div>
-              <div id="box5"><p>Methods and Objects</p></div>
-              <div id="box6"><p>APIs</p></div>
+              <div id="box4"><p>Methods and Objects</p></div>
+              <div id="box5"><p>APIs</p></div>
+              <div id="box6"><p>JavaScript Helpers</p></div>
             </div>
             <div class="cards">
-              <div id="box7"><p>JavaScript Helpers</p></div>
-              <div id="box8"><p>Handy Dandy Tools</p></div>
+              <div id="box7"><p>Handy Dandy Tools</p></div>
             </div>
           </div>
           <button id="home-btn">Home</button>
@@ -74,6 +93,12 @@
                 <li><span>||</span> or</li>
                 <li><span>!</span> not</li>
               </ul>
+            <li><span>Conditional statements</span> perform different actions based on different conditions.</li>
+                <ul class="keyword">
+                  <li><span>if</span> specifies code to be executed if condition is true, keep checking no matter what</li>
+                  <li><span>else if</span> specifies new condition to test if 1st is false</li>
+                  <li><span>else</span> specifies code to be executed if condition is false, stops it from checking for more conditions</li>
+                </ul>
         </ul>
         <button id="back-btn1">Back</button>
       </section>
@@ -122,22 +147,10 @@
           <li><span>this</span> keyword does not work with arrow functions when the function is within an object</li>
         <button id="back-btn3">Back</button>
       </section>
-      <!-- conditional statements -->
-      <section class="hidden" id="box4-info">
-        <h2>Conditional Statements</h2>
-        <p>Conditional statements perform different actions based on different conditions.</p>
-        <br>
-        <ul class="keyword">
-          <li><span>if</span> specifies code to be executed if condition is true, keep checking no matter what</li>
-          <li><span>else if</span> specifies new condition to test if 1st is false</li>
-          <li><span>else</span> specifies code to be executed if condition is false, stops it from checking for more conditions</li>
-        </ul>
-        <button id="back-btn4">Back</button>
-      </section>
       <!-- methods and objects -->
-      <section class="hidden" id="box5-info">
+      <section class="hidden" id="box4-info">
         <h2>Methods and Objects</h2>
-        <p><strong>Methods</strong> are  actions that can be performed on objects; they are propertyies containing a function definition. <strong>Objects</strong> are collections of properties.</p>
+        <p><strong>Methods</strong> are  actions that can be performed on objects; they are properties containing a function definition. <strong>Objects</strong> are collections of properties.</p>
         <br>
         <p>Methods</p>
         <ul class="keyword">
@@ -166,10 +179,10 @@
                 console.log(planet.name);
               </code></pre>
           </ul>
-          <button id="back-btn5">Back</button>
+          <button id="back-btn4">Back</button>
       </section>
       <!-- APIs -->
-      <section class="hidden" id="box6-info">
+      <section class="hidden" id="box5-info">
         <h1>APIs</h1>
         <p>Application Programming Interfaces — APIs — are constructs made available in programming languages to allow developers to create complex functionality more easily. It's a set of methods, properties, events, and URLs that allow interaction with a web browser. They allow access to things like computer mics and cameras or, for touch screens, tell the device where its been touched.</p>
         <ul>
@@ -178,14 +191,14 @@
         </ul>
         <h2>Document Object Model</h2>
         <p>The Document Object Model — DOM — is an API for HTML documents that allows you to manipulate the browser without permanently changing anything in the code.</p>
-        <button id="back-btn6">Back</button>
+        <button id="back-btn5">Back</button>
       </section>
       <!-- JavaScript Helpers -->
-      <section class="hidden" id="box7-info">
+      <section class="hidden" id="box6-info">
         <h1>JavaScript Helpers</h1>
         <button id="jquery-box">jQuery</button>
         <button id="node-box">Node.js</button>
-        <button id="back-btn7">Back</button>
+        <button id="back-btn6">Back</button>
       </section>
       <!-- jQuery -->
       <section class="hidden" id="jquery-info">
@@ -216,17 +229,21 @@
         </ul>
       </section>
 <!-- handy dandy tools -->
-      <section class="" id="box8-info">
+      <section class="hidden" id="box7-info">
         <h1>Handy Dandy Tools</h1>
         <h2>Local Storage</h2>
-        <p>Local storage stores strings that represent objects in the browser.</p>
+        <p>Local storage is a window object property that stores <strong>strings</strong> that represent objects in the browser. To sore arrays or objects, you have to convert them to strings. It can be used to save scores, simple tasks, etc.</p>
         <ul class="keyword">
           <li><span>localStorage.setItem</span> saves the information as a string</li>
           <li><span>localStorage.getItem</span> retrieves the information from local storage to be used/displayed</li>
+          <li><span>localStorage.setItem</span> saves data to local storage</li>
         </ul>
         <p>Local storage works in key-value pairs:</p>
-        <p>localStorage.setItem(key, value);</p>
-        <button id="back-btn8">Back</button>
+        <img src="./assets/storage-set-item.png">
+        <br>
+        <img src="./assets/storage-get-item.png">
+        <p class="keyword"><span>JSON.stringify()</span> is used to convert data into a string. <span>JSON.parse</span> is used to convert strings into objects.</p>
+        <button id="back-btn7">Back</button>
       </section>
 
     </main>

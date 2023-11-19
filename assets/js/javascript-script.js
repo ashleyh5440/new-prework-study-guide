@@ -7,7 +7,6 @@ const box6 = document.getElementById("box6");
 const box7 = document.getElementById("box7");
 const jQueryBox = document.getElementById("jquery-box");
 const nodeJsBox = document.getElementById("node-box");
-const box8 = document.getElementById("box8");
 
 //info boxes
 const box1Info = document.getElementById("box1-info");
@@ -19,7 +18,7 @@ const box6Info = document.getElementById("box6-info");
 const box7Info = document.getElementById("box7-info");
 const jQueryBoxInfo = document.getElementById("jquery-info")
 const nodeInfo = document.getElementById("node-info")
-const box8Info = document.getElementById("box8-info");
+
 
 //back buttons
 const backBtn1 = document.getElementById("back-btn1");
@@ -29,7 +28,7 @@ const backBtn4 = document.getElementById("back-btn4");
 const backBtn5 = document.getElementById("back-btn5");
 const backBtn6 = document.getElementById("back-btn6");
 const backBtn7 = document.getElementById("back-btn7");
-const backBtn8 = document.getElementById("back-btn8");
+
 
 const homeBtn = document.getElementById("home-btn")
 
@@ -110,4 +109,4 @@ backBtn5.addEventListener("click", handleBackBtnClick);
 backBtn6.addEventListener("click", handleBackBtnClick);
 backBtn7.addEventListener("click", handleBackBtnClick);
 
-
+JSON.stringify()
