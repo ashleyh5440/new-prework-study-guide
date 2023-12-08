@@ -14,7 +14,7 @@
     #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8 {
     background-color: rgb(1,218,218)
   }
-    #jquery-box, #node-box {
+    #jquery-box, #node-box, #oop-box, #express-box{
     padding: 2%;
     background-color: rgb(255, 136, 0);
     border: none;
@@ -26,8 +26,10 @@
 #jquery-box:hover {
     transform: scale(1.2);
 }
-
 #node-box:hover {
+    transform: scale(1.2);
+}
+#oop-box:hover {
     transform: scale(1.2);
 }
   </style>
@@ -99,7 +101,9 @@
                   <li><span>else if</span> specifies new condition to test if 1st is false</li>
                   <li><span>else</span> specifies code to be executed if condition is false, stops it from checking for more conditions</li>
                 </ul>
+            <li><span>Switch Statements</span> are like <span>conditional/if-else statements</span>, but is usually shorter and more readable.</li> 
         </ul>
+        <img src="./assets/switch-vs-ifelse.png">
         <button id="back-btn1">Back</button>
       </section>
       <!-- loops -->
@@ -113,10 +117,12 @@
               <li><strong>condition:</strong> <span>i &lt; array.length</span> length of array, which determines how long loop will run </li>
               <li><strong>final:</strong> what allows the array to iterate over each item. <span>i++</span> makes sure every time the code loops, it increases by one</li>
             </ul>
+            <br>
         <p class="keyword"><span>While</span> loops through a block of code while a specified condition is true</p>
         <img src="./assets/while-loop.png">
         <p class="keyword"><span>For in loops</span> loop through the properties of an object</p>
         <img src="./assets/for-in-loop.png">
+        <br>
         <p class="keyword"><span>For of loops</span> loop through the values of an iterable object</p>
         <img src="./assets/for-of-loop.png">
         <button id="back-btn2">Back</button>
@@ -198,9 +204,12 @@
         <h1>JavaScript Helpers</h1>
         <button id="jquery-box">jQuery</button>
         <button id="node-box">Node.js</button>
+        <button id="oop-box">Object Oriented Programming (OOP)</button>
+        <button id="express-box">Express.js</button>
+        <br>
         <button id="back-btn6">Back</button>
       </section>
-      <!-- jQuery -->
+      <!-- jQuery info -->
       <section class="hidden" id="jquery-info">
         <h2>jQuery</h2>
         <p>jQuery is a third party JavaScript library. It's purpose is to make JavaScript easier to use.</p>
@@ -217,6 +226,7 @@
         <span>$("#test").hide()</span> hides the element with id="test".
         <p>All jQuery must be inside the document ready event:</p>
       </section>
+      <!-- Node.js info -->
       <section class="hidden" id="node-info">
         <h2>Node.js</h2>
         <p>Node.js is a cross-platform, open-space server that runs JavaScript on the backend and lets you make your own server-side applications with JavaScript. This is done mainly with NPM packages.</p>
@@ -224,9 +234,68 @@
           <li>Node Package Manager — NPM — packages let you easily use JavaScript modules, blocks of code that can do something</li>
         </ul>
         <ul class="keyword">
-          <li><span>code index.js</span> creates index.js file</li>
+          <li><span>touch index.js</span> creates index.js file</li>
           <li><span>node</span> takes you to the node interpreter, <span>process.exit ()</span> takes you out</li>
+          <li><span>npm install</span> downloads the npm and creates the <span>package.json</span> file; this has to be done for every new project
+          <li><span>npm i inquirer@8.24</span> installs the inquirer package and the <span>node_modules</span> folder and <span> package-lock.json</span> file</li>
+          <ul class="keyword">
+            <li>you have to add <span>const inquirer = require("inquirer")</span> in the js file to then use the inquirer package</li>
+          </ul>
+          <li>the <span>fs</span> module works with the file system on your computer. Some <span>fs</span> methods are:
+            <ul>
+              <li><span>fs.readFile()</span> reads files</li>
+              <li><span>fs.writeFile()</span> creates a file if one doesn't exist, or replaces one that does in the specified location</li>
+              <li><span>fs.writeFile()</span> adds data to your file</li>
+              <ul class="keyword">
+                <li><span>const fs = require('fs');</span> needs to be in the js file to us the <span>fs</span> module</li>
+              </ul>
+            </ul>
         </ul>
+      </section>
+      <!-- OOP info -->
+      <section class="hidden" id="oop-info">
+        <h2>Object Oriented Programming</h2>
+        <p class="keyword"><span>Object Oriented Programming (OOP)</span> is a model that organizes software design around data and objects rather than function and logic.</p>
+        <p>The four pillars of OOP are <strong>abstraction</strong>, <strong>encapsulation</strong>, <strong>inheritance</strong>, and <strong>polymorphism</strong>.</p>
+        <ul class="keyword">
+          <li><span>abstraction</span></li>
+          <li><span>encapsulation</span></li>
+          <li><span>inheritance</span></li>
+          <li><span>polymorphism</span></li>
+        </ul>
+      </section>
+      <section class="hidden" id="express-info">
+        <h2>Express.js</h2>
+        <p class="keyword"><span>Express.js</span> is a framework for Node.js that let's you write your own APIs, handle HTTP requests, and implement *middleware in server-side applications. <span>Express</span> exists on the back-end of applications and is the most widely used framework, but there are others.</p>
+        <ul>
+          <li>* middleware are functions that can intercept and process a request before it reaches the final route </li>
+        </ul>
+        <ul class="keyword">
+          <li><span>npm i express</span> downloads express to the project. It then has to be imported with <span>require</span></li>
+          <li><span>node server</span> starts/runs the server</li>
+          <li><span>ctrl c</span> stops the server</li>
+        </ul>
+          <p><strong>Routes<strong> send and recieve depending on the specific route and the HTTP method used. The HTTP methods are:</p>
+          <ul class="keyword">
+            <li><span>post</span> submits data to the specified sources.</li>
+            <li><span>get</span> retrieves a resource from a server</li>
+            <li><span>delete</span> deletes specified resource</li>
+            <li><span>put</span> / <span>patch</span> updates specifed resource (these are not often used)</li>
+          </ul>
+          <p class="keyword"><strong>Port numbers</strong> direct data to the correct program. If a computer is a house with many rooms, each one being a program, then port numbers are the doors to the rooms. They usually start at <span>3000</span> and go up from there.</p>  
+          <h3>RESTful APIs<h3>
+            <p class="keyword">Representaional State Transfer, <span>REST</span>, is like a set of rules that provide a standard of way for clients to interact with resources on the internet.</p>
+            <p class="keyword"><span>RESTful API</span> is like a waiter in a resturant following a menu <span>(API documentation)</span> and serves the food <span>(resources)</span> requested using the predefined instructions <span>(HTTP methods)</span>. <span>RESTful APIs</span> must:
+              <ul>
+                <li>comprise servers, clients, resources and requests via HTTP</li>
+                <li>use stateless communications between client and server</li>
+                  <ul>
+                    <li>* to be stateless, one request to a server doesn't depend on/affect a different request</li>
+                  </ul>
+                <li>serve cached objects to reduce bandwidth</li>
+                <li>maintain uniform interface between client and server so they can evolve seperately</li>
+                <li>can perform code on demand (optional)</li>
+              </ul>
       </section>
 <!-- handy dandy tools -->
       <section class="hidden" id="box7-info">
@@ -243,9 +312,9 @@
         <br>
         <img src="./assets/storage-get-item.png">
         <p class="keyword"><span>JSON.stringify()</span> is used to convert data into a string. <span>JSON.parse</span> is used to convert strings into objects.</p>
+        <p class="keyword"><span>parseFloat</span> parses a value as a string and returns the first number or NaN if no number</p>
         <button id="back-btn7">Back</button>
       </section>
-
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

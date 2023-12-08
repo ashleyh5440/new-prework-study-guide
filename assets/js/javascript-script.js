@@ -7,6 +7,8 @@ const box6 = document.getElementById("box6");
 const box7 = document.getElementById("box7");
 const jQueryBox = document.getElementById("jquery-box");
 const nodeJsBox = document.getElementById("node-box");
+const oopBox = document.getElementById("oop-box");
+const expressBox = document.getElementById("express-box");
 
 //info boxes
 const box1Info = document.getElementById("box1-info");
@@ -16,8 +18,10 @@ const box4Info = document.getElementById("box4-info");
 const box5Info = document.getElementById("box5-info");
 const box6Info = document.getElementById("box6-info");
 const box7Info = document.getElementById("box7-info");
-const jQueryBoxInfo = document.getElementById("jquery-info")
-const nodeInfo = document.getElementById("node-info")
+const jQueryBoxInfo = document.getElementById("jquery-info");
+const nodeInfo = document.getElementById("node-info");
+const oopInfo = document.getElementById("oop-info");
+const expressInfo = document.getElementById("express-info");
 
 
 //back buttons
@@ -84,7 +88,7 @@ box7.addEventListener("click", function () {
     showBoxInfo(box7Info);
 });
 
-//listener for jquery box
+//listeners for js helper boxs
 jQueryBox.addEventListener('click', function() {
     if (jQueryBoxInfo.classList.contains('hidden')) {
         jQueryBoxInfo.classList.remove('hidden');
@@ -101,6 +105,22 @@ nodeJsBox.addEventListener('click', function() {
     }
 });
 
+oopBox.addEventListener('click', function() {
+    if (oopInfo.classList.contains('hidden')) {
+        oopInfo.classList.remove('hidden');
+    } else {
+        oopInfo.classList.add('hidden');
+    }
+});
+
+expressBox.addEventListener('click', function() {
+    if (expressInfo.classList.contains('hidden')) {
+        expressInfo.classList.remove('hidden');
+    } else {
+        expressInfo.classList.add('hidden');
+    }
+});
+
 backBtn1.addEventListener("click", handleBackBtnClick);
 backBtn2.addEventListener("click", handleBackBtnClick);
 backBtn3.addEventListener("click", handleBackBtnClick);
@@ -109,4 +129,3 @@ backBtn5.addEventListener("click", handleBackBtnClick);
 backBtn6.addEventListener("click", handleBackBtnClick);
 backBtn7.addEventListener("click", handleBackBtnClick);
 
-JSON.stringify()
