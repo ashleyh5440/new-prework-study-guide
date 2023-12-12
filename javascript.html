@@ -14,7 +14,7 @@
     #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8 {
     background-color: rgb(1,218,218)
   }
-    #jquery-box, #node-box, #oop-box, #express-box{
+    #jquery-box, #node-box, #oop-box, #express-box, #mysql-box{
     padding: 2%;
     background-color: rgb(255, 136, 0);
     border: none;
@@ -30,6 +30,9 @@
     transform: scale(1.2);
 }
 #oop-box:hover {
+    transform: scale(1.2);
+}
+#mysql-box:hover {
     transform: scale(1.2);
 }
   </style>
@@ -206,6 +209,7 @@
         <button id="node-box">Node.js</button>
         <button id="oop-box">Object Oriented Programming (OOP)</button>
         <button id="express-box">Express.js</button>
+        <button id="mysql-box">MySQL</button>
         <br>
         <button id="back-btn6">Back</button>
       </section>
@@ -264,6 +268,7 @@
           <li><span>polymorphism</span></li>
         </ul>
       </section>
+      <!-- Express info -->
       <section class="hidden" id="express-info">
         <h2>Express.js</h2>
         <p class="keyword"><span>Express.js</span> is a framework for Node.js that let's you write your own APIs, handle HTTP requests, and implement *middleware in server-side applications. <span>Express</span> exists on the back-end of applications and is the most widely used framework, but there are others.</p>
@@ -275,7 +280,7 @@
           <li><span>node server</span> starts/runs the server</li>
           <li><span>ctrl c</span> stops the server</li>
         </ul>
-          <p><strong>Routes<strong> send and recieve depending on the specific route and the HTTP method used. The HTTP methods are:</p>
+          <p><strong>Routes</strong> send and recieve depending on the specific route and the HTTP method used. The HTTP methods are:</p>
           <ul class="keyword">
             <li><span>post</span> submits data to the specified sources.</li>
             <li><span>get</span> retrieves a resource from a server</li>
@@ -296,6 +301,43 @@
                 <li>maintain uniform interface between client and server so they can evolve seperately</li>
                 <li>can perform code on demand (optional)</li>
               </ul>
+          <h3>Modular Routing</h3>
+              <p class="keyword"><span>Modular Routing</span> is having each route in a separate file and bouncing between them based on the client's request.</p>
+              <ul class="keyword">
+                <li><span>app.use</span> mounts the middleware for all routes of the app.</li> <li><span>router.use</span> mounts middleware for routes of a specific router, used for extracting routes.</li>
+              </ul>
+          <h3>Query Params</h3>
+              <p class="keyword"><span>Query Params</span> change the information you get back from the API, whether it's the order of the data or the content. Based on what you put in, it sorts through the information.</p>
+      </section>
+      <!-- MySQL info -->
+      <section class="hidden" id="mysql-info">
+        <h2>MySQL</h2>
+        <p class="keyword">Structured Query Language, <span>MySQL</span>, uses queries to interact with data that is stored in a database. <span>MySQL</span> operations are:</p>
+        <ul class="keyword">
+          <li><span>CREATE</span> makes a new table</li>
+          <ul class="keyword">
+            <li>CREATE TABLE table_name (column_name column_type constraints);</li>
+            <li><span>column_name</span> name of the particular column</li>
+            <li><span>column_type</span> datatype of the coulmn, depends on the data of the reference column. Can be <span>char(), varchar(), int(), float(),</span> etc.</li>
+            <li><span>constraints</span> give a set of restrictions, can be <span>not null, primary key, foreign key,</span> etc.</li>
+            <li><span>use &lt;database&gt;</span> command must be used before any operation on the table. Like <span>cd</span>, it lets you move around your databases</li>
+          </ul>
+          <li><span>READ</span> is used to retrieve data from the table of a database</li>
+          <li><span>UPDATE</span> alters the content or stucture of a table</li>
+          <li><span>DELETE</span> removes content or structure from the table</li>
+        </ul>
+        <p>Other SQL commands:</p>
+        <ul class="keyword">
+          <li><span>SELECT</span> extracts data from a database</li>
+          <li><span>UPDATE</span></li>
+          <li><span>INSERT INTO</span> inserts new data into a database</li>
+          <li><span>CREATE DATABASE</span> creates a new database</li>
+          <li><span>ALTER DATABASE</span> modifies a database</li>
+          <li><span>ALTER TABLE</span> modifies a table</li>
+          <li><span>DROP TABLE</span> deletes a table</li>
+          <li><span>CREATE INDEX</span> creates an index (search key)</li>
+          <li><span>DROP INDEX</span> deletes an index</li>
+        </ul>
       </section>
 <!-- handy dandy tools -->
       <section class="hidden" id="box7-info">

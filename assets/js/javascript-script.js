@@ -9,6 +9,7 @@ const jQueryBox = document.getElementById("jquery-box");
 const nodeJsBox = document.getElementById("node-box");
 const oopBox = document.getElementById("oop-box");
 const expressBox = document.getElementById("express-box");
+const mysqlBox = document.getElementById("mysql-box");
 
 //info boxes
 const box1Info = document.getElementById("box1-info");
@@ -22,6 +23,8 @@ const jQueryBoxInfo = document.getElementById("jquery-info");
 const nodeInfo = document.getElementById("node-info");
 const oopInfo = document.getElementById("oop-info");
 const expressInfo = document.getElementById("express-info");
+const mysqlInfo = document.getElementById("mysql-info");
+
 
 
 //back buttons
@@ -118,6 +121,14 @@ expressBox.addEventListener('click', function() {
         expressInfo.classList.remove('hidden');
     } else {
         expressInfo.classList.add('hidden');
+    }
+});
+
+mysqlBox.addEventListener('click', function() {
+    if (mysqlInfo.classList.contains('hidden')) {
+        mysqlInfo.classList.remove('hidden');
+    } else {
+        mysqlInfo.classList.add('hidden');
     }
 });
 
