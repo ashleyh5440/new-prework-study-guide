@@ -311,8 +311,8 @@
       </section>
       <!-- MySQL info -->
       <section class="hidden" id="mysql-info">
-        <h2>MySQL</h2>
-        <p class="keyword">Structured Query Language, <span>MySQL</span>, uses queries to interact with data that is stored in a database. <span>MySQL</span> operations are:</p>
+        <h2>SQL</h2>
+        <p class="keyword">Structured Query Language, <span>SQL</span>, uses queries to interact with data that is stored in a database. <span>SQL</span> operations are:</p>
         <ul class="keyword">
           <li><span>CREATE</span> makes a new table</li>
           <ul class="keyword">
@@ -326,10 +326,15 @@
           <li><span>UPDATE</span> alters the content or stucture of a table</li>
           <li><span>DELETE</span> removes content or structure from the table</li>
         </ul>
-        <p>Other SQL commands:</p>
+        <h3>Databases and running SQL</h3>
+        <p class="keyword">When making databases in SQL, the <span>schema.sql</span> file sets up the tables in the database and the <span>seeds.sql</span> file holds the data for those tables.</p>
+        <ul class="keyword">
+          <li><span>mysql -u root -p</span> starts MySQL on your terminal</li>
+          <li><span>source [file name]</span> runs the .sql file</li>
+        </ul>
+        <h3>Other SQL commands:</h3>
         <ul class="keyword">
           <li><span>SELECT</span> extracts data from a database</li>
-          <li><span>UPDATE</span></li>
           <li><span>INSERT INTO</span> inserts new data into a database</li>
           <li><span>CREATE DATABASE</span> creates a new database</li>
           <li><span>ALTER DATABASE</span> modifies a database</li>
@@ -337,7 +342,30 @@
           <li><span>DROP TABLE</span> deletes a table</li>
           <li><span>CREATE INDEX</span> creates an index (search key)</li>
           <li><span>DROP INDEX</span> deletes an index</li>
+          <li><span>WHERE</span> filters through records</li>
+          <li><span>SET</span> used with <span>UPDATE</span> to specifiy columns and values are updated</li>
+          <li><span>DESCRIBE [table_name]</span> shows the columns and types of data in a table</li>
         </ul>
+        <h3>Data Types</h3>
+        <p class="keyword"><span>Data types</span> define what value the column can hold. 3 main types: string, numeric, date and time.</p>
+        <ul class="keyword">
+          <li>string</li>
+            <ul class="keyword">
+              <li><span>VARCHAR(size)</span> string up to 65,535 characters</li>
+              <li><span>TEXT(size)</span> string up to 65,535 bytes</li>
+            </ul>
+          <li>numeric</li>
+            <ul class="keyword">
+              <li><span>INT(size)</span> numbers up to millions</li>
+            </ul>
+          <li>date and time</li>
+            <ul class="keyword">
+              <li><span>DATE</span> date YYYY-MM-DD format</li>
+            </ul>
+        </ul>
+        <h3>Connecting a database to a server</h3>
+        <h3>Resources</h3>
+        <a href="https://www.w3schools.com/sql/default.asp">W3 Schools SQL tutorial</a>
       </section>
 <!-- handy dandy tools -->
       <section class="hidden" id="box7-info">
