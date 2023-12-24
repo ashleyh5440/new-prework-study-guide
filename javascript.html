@@ -39,7 +39,7 @@
   <body>
     <main>
       <section class="initial">
-        <img id="arcade-img" src="./assets/arcade-background.jpg">
+        <img id="arcade-img" src="./assets/images/arcade-background.jpg">
         <div class="container">
           <div class="whole">
             <div class="header">
@@ -68,7 +68,7 @@
         <p>JavaScript is what allows a user to interact with the site</p>
         <br>
         <h2>Basics</h2>
-        <img src="./assets/format.png">
+        <img src="./assets/images/format.png">
         <ul class="keyword">
           <li><span>variables</span> store value and can be declared 4 ways: automatically or with the keywords <span>var</span>, <span>let</span>, or <span>const</span>. Types of variables:</li>
             <ul>
@@ -106,14 +106,14 @@
                 </ul>
             <li><span>Switch Statements</span> are like <span>conditional/if-else statements</span>, but is usually shorter and more readable.</li> 
         </ul>
-        <img src="./assets/switch-vs-ifelse.png">
+        <img src="./assets/images/switch-vs-ifelse.png">
         <button id="back-btn1">Back</button>
       </section>
       <!-- loops -->
       <section class="hidden" id="box2-info">
         <h2>Loops</h2>
         <p class="keyword"><span>For loops</span> loop through a block of code a number of times</p>
-        <img src="./assets/for-loop.png">
+        <img src="./assets/images/for-loop.png">
         <p>3 statements in a for loop:</p>
             <ul class="keyword">
               <li><strong> starting point:</strong> <span> i = 0</span> starts loop at beginning of array</li>
@@ -122,12 +122,12 @@
             </ul>
             <br>
         <p class="keyword"><span>While</span> loops through a block of code while a specified condition is true</p>
-        <img src="./assets/while-loop.png">
+        <img src="./assets/images/while-loop.png">
         <p class="keyword"><span>For in loops</span> loop through the properties of an object</p>
-        <img src="./assets/for-in-loop.png">
+        <img src="./assets/images/for-in-loop.png">
         <br>
         <p class="keyword"><span>For of loops</span> loop through the values of an iterable object</p>
-        <img src="./assets/for-of-loop.png">
+        <img src="./assets/images/for-of-loop.png">
         <button id="back-btn2">Back</button>
       </section>
       <!-- functions -->
@@ -142,14 +142,14 @@
           </ul>
         <br>
         <p>Functions are written as the following:</p>
-          <img src="./assets/function.png">
+          <img src="./assets/images/function.png">
         <h2>Arrow Functions</h2>
         <p>Arrow functions work the same as regualr functions, they just allow developers to write shorter function syntax.</p>
         <p>Regular function syntax:</p>
-        <img src="./assets/before-arrow-function.png">
+        <img src="./assets/images/before-arrow-function.png">
         <br>
         <p>Arrow function syntax:</p>
-        <img src="./assets/after-arrow function.png">
+        <img src="./assets/images/after-arrow function.png">
         <ul class="keyword">
           <li>if arrow function only has 1 expression and returns a value, omit <span>{}</span> and <span>return</span> keyword</li>
           <li>paramaters go inside the <span>()</span>; if there is only 1 paramater, omit the <span>()</span></li>
@@ -172,7 +172,7 @@
               <li>methods like <span>call()</span>, <span>apply()</span>, and <span>bind()</span> can refer <span>this</span> to any object</li>
             </ul>
             <li>You can access a object with the following syntax:</li>
-            <img src="./assets/object-call.png">
+            <img src="./assets/images/object-call.png">
           </ul>
           <p>Objects</p>
           <ul class="keyword">
@@ -180,7 +180,7 @@
               <ul>
                 <li>properties are made up of key-value pairs</li>
               </ul>
-              <img src="./assets/object.png">
+              <img src="./assets/images/object.png">
               <ul>
                 <li> to access property's value, use the object's name associated key</li>
               </ul>
@@ -324,30 +324,37 @@
           </ul>
           <li><span>READ</span> is used to retrieve data from the table of a database</li>
           <li><span>UPDATE</span> alters the content or stucture of a table</li>
-          <li><span>DELETE</span> removes content or structure from the table</li>
+          <li><span>DELETE FROM [table name] WHERE [variable] =[value]</span> removes content or structure from the table</li>
         </ul>
         <h3>Databases and running SQL</h3>
         <p class="keyword">When making databases in SQL, the <span>schema.sql</span> file sets up the tables in the database and the <span>seeds.sql</span> file holds the data for those tables.</p>
         <ul class="keyword">
           <li><span>mysql -u root -p</span> starts MySQL on your terminal</li>
           <li><span>source [file name]</span> runs the .sql file</li>
-        </ul>
+        </ul> 
         <h3>Other SQL commands:</h3>
         <ul class="keyword">
           <li><span>SELECT</span> extracts data from a database</li>
           <li><span>INSERT INTO</span> inserts new data into a database</li>
-          <li><span>CREATE DATABASE</span> creates a new database</li>
-          <li><span>ALTER DATABASE</span> modifies a database</li>
-          <li><span>ALTER TABLE</span> modifies a table</li>
-          <li><span>DROP TABLE</span> deletes a table</li>
+          <li><span>CREATE</span> creates a new database or table</li>
+          <li><span>ALTER</span> modifies a database or table</li>
+          <li><span>DROP</span> deletes a database or table</li>
           <li><span>CREATE INDEX</span> creates an index (search key)</li>
           <li><span>DROP INDEX</span> deletes an index</li>
           <li><span>WHERE</span> filters through records</li>
           <li><span>SET</span> used with <span>UPDATE</span> to specifiy columns and values are updated</li>
           <li><span>DESCRIBE [table_name]</span> shows the columns and types of data in a table</li>
+        </ul>  
+        <h3>Keys</h3>  
+        <p>Keys identify rows of data in a table and can link tables together by matching keys</p>
+        <ul class="keyword">
+          <li><span>PRIMARY KEY</span> uniquely identifies record of your choice in a table</li>
+          <img src="./assets/images/primary-key.png">
+          <li><span>FOREIGN KEY</span> is a feild in one table that refers to a <span>PRIMARY KEY</span> in another table. Names and values have to match across tables</li>
+          <img src="./assets/images/foreign-key.png">
         </ul>
         <h3>Data Types</h3>
-        <p class="keyword"><span>Data types</span> define what value the column can hold. 3 main types: string, numeric, date and time.</p>
+        <p class="keyword"><span>Data types</span> define what value the column in a tablecan hold. 3 main types: string, numeric, date and time.</p>
         <ul class="keyword">
           <li>string</li>
             <ul class="keyword">
@@ -363,7 +370,58 @@
               <li><span>DATE</span> date YYYY-MM-DD format</li>
             </ul>
         </ul>
+        <h3>Joins</h3>
+        <p class = "keywords"><span>JOIN</span> combines rows from 2 or more tables based on a related column</p>
+          <ul class="keyword">
+            <li><span>INNER JOIN</span> returns records that have matching values in both tables</li>
+            <img src="./assets/images/inner-join.png">
+            <li><span>LEFT JOIN</span> returns all records from the left table and matched records form the right</li>
+            <img src="./assets/images/left-join.png">
+            <li><span>RIGHT JOIN</span> returns all records from the right table and matched records from the left</li>
+            <img src="./assets/images/right-join.png">
+            <li><span>FULL JOIN</span> returns all rows if there is a match in right or left table, returns <span>NULL</span> for columns with no match</li>
+            <img src="./assets/images/full-join.png">
+            <li>Other other types of <span>JOINS:</span></li>
+              <ul class="keyword">
+                <li><span>CROSS JOIN</span> returns all records from both tables</li>
+                <li><span>SELF JOIN</span> joins a table with itself</li>
+              </ul>
+          </ul>
         <h3>Connecting a database to a server</h3>
+        <p>Getting started:</p>
+        <ul class="keyword">
+          <li>should have <span>schema.sql</span> and <span>seeds.sql</span> files in <span>db</span> folder</li>
+          <li>need to have a <span>server.js</span> file to write the connection</li>
+        </ul>
+        <p>The steps:</p>
+        <ul class="keyword">
+          <li><span>mysql -u root -p</span> to log into MySQL</li>
+          <li><span>source ./db/schema.sql</span> to run schema file</li>
+          <li><span>source ./db/seeds.sql</span> to run seeds</li>
+          <li><span>SELECT * FROM [table_name];</span> to read the data in the table</li>
+          <li><span>exit</span> to exit MySQL</li>
+          <li><span>npm install</span> to install Node</li>
+          <li><span>npm i express</span> to install Express</li>
+        </ul>
+        <p class="keyword">In <span>js</span> file(s):</p>
+        <ul class="keyword">
+          <li><span>const db = mysql.createConnection</span> or similar to connect to SQL database</li>
+          <li><span>db.query([commands])</span></li>
+        </ul>  
+        <h3>Sequlize</h3>
+        <p class="keyword"><span>Sequelize</span> simplifies database interactions in <span>Node.js</span> applications, helps organize and retrieve information from the database.</p>
+        <ul class="keyword">
+          <li><span>npm i sequelize</span> to install sequelize</li>
+          <li><span>npm i --save mysql2</span> to install MySQL driver</li>
+        </ul>
+        <p class="keyword"><span>dotenv</span> is a Node moduale that lets you load enviroment variables without hard coding it into the code. Also used for variables you need but want to keep hidden, like APIkeys or passwords.</p>
+        <ul class="keyword">
+          <li><span>npm i dotenv --save</span> installs the package</li>
+          <li><span>require('dotenv').config</span> imports the env file.</li>
+          <li>in the <span>.env</span> file:</li>
+        <img src="./assets/images/env.png">
+        </ul>
+
         <h3>Resources</h3>
         <a href="https://www.w3schools.com/sql/default.asp">W3 Schools SQL tutorial</a>
       </section>
@@ -378,9 +436,9 @@
           <li><span>localStorage.setItem</span> saves data to local storage</li>
         </ul>
         <p>Local storage works in key-value pairs:</p>
-        <img src="./assets/storage-set-item.png">
+        <img src="./assets/images/storage-set-item.png">
         <br>
-        <img src="./assets/storage-get-item.png">
+        <img src="./assets/images/storage-get-item.png">
         <p class="keyword"><span>JSON.stringify()</span> is used to convert data into a string. <span>JSON.parse</span> is used to convert strings into objects.</p>
         <p class="keyword"><span>parseFloat</span> parses a value as a string and returns the first number or NaN if no number</p>
         <button id="back-btn7">Back</button>
