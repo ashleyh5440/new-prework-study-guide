@@ -61,44 +61,44 @@ const questions = [
 
     {
     id: 1,
-    question: "What is the differenence between function declarations and function expressions?",
+    question: "What three components do you need for a border?",
     answers: [
-        "Function declarations are global and load before any code is executed; function expressions are local and only load when that line is reached",
-        "They're the same and this question is dumb",
-        "Function declarations are local and only load when that line is reached; function expressions are global and load before any code is executed",
+        "size, style, and color",
+        "color, size, and thickness",
+        "size, style, and opacity",
             ],
         correctIndex: 0
     },
 
     {
     id: 2,
-    question: "What are the different types of variables?",
+    question: "What is the correct paragraph tag?",
     answers: [
-        "undefined, string, number, boolean",
-        "tag, string, number, stylesheet",
-        "boolean, method, number, function"
+        "<p></p>",
+        "<w></w>",
+        "<li></li>"
             ],
     correctIndex: 0
     },
 
     {
     id: 3,
-    question: "How do you add a comment in JavaScript?",
+    question: "What is the correct format for an array?",
     answers: [
-        "<!-- --> or //",
-        "$$ or @@",
-        "// or /* */"
+        "var colors = (black), (orange), (green)",
+        "var colors = black orange green",
+        "var colors = ['black', 'orange', 'green']"
             ],
     correctIndex: 2
     },
 
     {
     id: 4,
-    question: "What is the correct format for an array?",
+    question: "How do you link a CSS stylesheet?",
     answers: [
-        "var colors = ['black', 'orange', 'green']", 
-        "var colors = black orange green",
-        "var colors = (black), (orange), (green)"
+        "<link rel=''stylesheet'' href=''[path]''>", 
+        "<script rel=''stylesheet'' href=''[path]''>",
+        "<link href=''[path]''>"
             ],
     correctIndex: 0
     },
