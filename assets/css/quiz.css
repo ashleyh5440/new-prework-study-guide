@@ -41,19 +41,33 @@ p {
     border: 5px solid red;
 }
 
-#question {
-    font-size: 30px;
+.whole {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 25px;
+    color: black;
+    border: none;
 }
 
 #continue, #exit {
     background-color: rgb(49,255,173);
-    width: 26%;
     margin-top: 5%;
     text-align: center;
     font-family: 'DotGothic16', sans-serif;
     font-size: 25px;
     color: black;
     border: none;
+}
+
+#question {
+    font-size: 30px;
 }
 
 #choice1, #choice2, #choice3 {
@@ -87,18 +101,13 @@ p {
     transform: scale(1.2);
 }
 
-#next-question:hover {
-    transform: scale(1.2);
-}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
-#choice1:hover {
-    transform: scale(1.2);
-}
-
-#choice2:hover {
-    transform: scale(1.2);
-}
-
-#choice3:hover {
-    transform: scale(1.2);
+  @keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
 }
