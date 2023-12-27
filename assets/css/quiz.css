@@ -1,66 +1,82 @@
-body {
-    background-color: rgb(12, 73, 3);
-}
-
-section {
-    position: relative;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
 h1 {
     font-family: 'DotGothic16', sans-serif;
+    text-align: center;
     font-size: 290%;
-    color: white;
-
-    animation: floating;
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
 }
 
 li {
-    font-size: 25px;
+    font-size: 30px;
 }
 
-#arcade-img {
+button {
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+}
+
+.container1 {
     position: relative;
+}
+
+.arcade-background {
     width: 100%;
+    position: relative;
 }
 
-.container {
+.quiz-rules {
     position: absolute;
-    width: 75%;
-    height: 67%;
-    bottom: 14%;
-    left: 12%;
-}
-
-.whole {
-    width: 99%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header {
-    text-align: center;
-}
-
-.buttons {
-    margin: 10%;
-    display: flex;
     width: 70%;
-    justify-content: space-around;
+    left: 14.5%;
+    bottom: 20%;
+    border: 5px solid red;
 }
 
-#continue, #exit{
+.container2 {
+    position: absolute;
+    width: 70%;
+    left: 14.5%;
+    bottom: 20%;
+    border: 5px solid red;
+}
+
+#question {
+    font-size: 30px;
+}
+
+#continue, #exit {
     background-color: rgb(49,255,173);
+    width: 26%;
+    margin-top: 5%;
     text-align: center;
     font-family: 'DotGothic16', sans-serif;
     font-size: 25px;
+    color: black;
     border: none;
+}
+
+#choice1, #choice2, #choice3 {
+    background-color: rgb(255, 132, 0);
+    width: 26%;
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 25px;
+    color: black;
+    border: none
+}
+
+#next-question {
+    margin-top: 5%;
+    background-color: rgb(49,255,173);
+    width: 26%;
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 25px;
+    color: black;
+    border: none
 }
 
 #continue:hover {
@@ -71,13 +87,18 @@ li {
     transform: scale(1.2);
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+#next-question:hover {
+    transform: scale(1.2);
+}
 
-  @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
+#choice1:hover {
+    transform: scale(1.2);
+}
+
+#choice2:hover {
+    transform: scale(1.2);
+}
+
+#choice3:hover {
+    transform: scale(1.2);
 }
