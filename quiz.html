@@ -12,7 +12,7 @@
     <section class="container1">
       <img class="arcade-background" src="./assets/images/arcade-background.jpg">
     </section>
-    <!-- <section>
+    <section class="quiz-rules-container">
       <div class="quiz-rules">
         <div class="whole">
             <h1>Quiz Rules:</h1>
@@ -27,9 +27,9 @@
             </div>
         </div>
       </div> 
-    </section>  -->
-
-    <section class="container2" id="quizBox">
+    </section> 
+<!-- questions container -->
+    <section class="container2 hidden" id="quizBox">
           <div class="time">
               <p>Time left:</p>
               <span id="timer"></span>
@@ -45,32 +45,29 @@
               <button id="next-question">Next question</button>
           </div>
       </section>
-
       <!-- end screen container -->
-      <!-- <section class="end-container hidden" id="endScreen">
+      <section class="end-container hidden" id="endScreen">
           <div>
               <h1>You completed the quiz!</h1>
-              <h3>Your score:</h3>
+              <p id="score">Your score:</p>
               <p id="finalScore"></p>
-              <h3>Save your score</h3>
+              <h2>Save your score</h2>
           <label for="initials">Initials</label>
           <input type="text" id="initials" name="initials"/>
-          <button id="save">SAVE</button>
-          <div>
-      </section> -->
+          <button id="save">Save</button>
+          <div> 
+      </section>
       <!-- scores container -->
-      <!-- <section class="scores-container hidden" id="scores">
-          <div>
-              <h1>High scores</h1>
-              <ol id="scoresList">
-              </ol>
-          <button id="retake"><a href="./index.html">Retake quiz</a></button>
+      <section class="scores-container hidden" id="scores">
+        <h1>High scores</h1>
+        <ol id="scoresList">
+        </ol>
+        <div>
+          <button id="retake">Retake quiz</button>
           <button id="clear">Clear scores</button>
-          </div>
-      </section> -->
-
-
-
+        </div>
+      </section>
   </main>
+  <script src="./assets/js/quiz.js"></script>
 </body>
 </html>
