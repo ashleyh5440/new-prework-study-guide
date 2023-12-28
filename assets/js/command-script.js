@@ -6,7 +6,15 @@ const homeBtn = document.getElementById("home-btn")
 let currentScreen = 0
 
 continueBtn.addEventListener("click", function() {
-    if (currentScreen < )
+    if (currentScreen < pages.length - 1) {
+        // if not on last page, switch to the next
+        const nextPageIndex = currentPageIndex + 1;
+        showPage(nextPageIndex);
+      } else {
+        // if on the last page, go to linked html file
+        window.location.href = "html-file-name.html"; 
+      }
+    });)
 })
 
 
