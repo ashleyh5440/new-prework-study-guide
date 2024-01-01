@@ -1,36 +1,26 @@
-.whole {
-    container-type: inline-size; 
-}
-
-.back-continue-buttons {
+section {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-#screen1, #screen2 {
-    container-type: inline-size;
+button {
+    padding: 2%;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 25px;
+    margin: 3%;
 }
 
-#home-btn {
+button:hover {
+    transform: scale(1.2);
+}
+
+#home-button {
     padding: 2%;
     background-color: rgb(255, 136, 0);
     border: none;
     font-family: 'DotGothic16', sans-serif;
     font-size: 25px;
-    margin-left: 10%;
-    /* margin-top: 5%; */
-}
-
-#home-btn:hover {
-    transform: scale(1.2);
-}
-
-#previous-btn, #continue-btn {
-    padding: 1%;
-    background-color: rgb(255,0,137);
-    border: none;
-    font-family: 'DotGothic16', sans-serif;
-    font-size: 20px;
     margin: 3%;
 }

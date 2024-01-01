@@ -25,8 +25,6 @@ const oopInfo = document.getElementById("oop-info");
 const expressInfo = document.getElementById("express-info");
 const mysqlInfo = document.getElementById("mysql-info");
 
-
-
 //back buttons
 const backBtn1 = document.getElementById("back-btn1");
 const backBtn2 = document.getElementById("back-btn2");
@@ -35,7 +33,6 @@ const backBtn4 = document.getElementById("back-btn4");
 const backBtn5 = document.getElementById("back-btn5");
 const backBtn6 = document.getElementById("back-btn6");
 const backBtn7 = document.getElementById("back-btn7");
-
 
 const homeBtn = document.getElementById("home-btn")
 
@@ -50,6 +47,7 @@ function showBoxInfo(boxInfo) {
     boxInfo.classList.remove("hidden");
     currentBox = boxInfo;
 }
+
 //function for back buttons
 function handleBackBtnClick() {
     document.querySelector(".initial").classList.remove("hidden");
