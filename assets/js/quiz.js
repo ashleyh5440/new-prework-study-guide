@@ -1,3 +1,10 @@
+const homeBtn = document.getElementById("home-btn")
+
+// home button listener
+homeBtn.addEventListener("click", function() {
+    window.location.href = 'index.html'
+  })
+
 const continueBtn = document.querySelector("#continue")
 const timerEl = document.getElementById("timer");
 let secondsLeft = 60;
