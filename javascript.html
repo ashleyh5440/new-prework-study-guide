@@ -11,10 +11,14 @@
     <title>JavaScript</title>
   </head>
   <style>
+    table, table td {
+      padding: 12px;
+      font-size: 20px;
+    }
     #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8 {
     background-color: rgb(1,218,218)
   }
-    #jquery-box, #node-box, #oop-box, #express-box, #mysql-box{
+    #jquery-box, #node-box, #oop-box, #express-box, #mysql-box, #mongo-box, #react-box {
     padding: 2%;
     background-color: rgb(255, 136, 0);
     border: none;
@@ -206,6 +210,27 @@
         </ul>
         <h2>Document Object Model</h2>
         <p>The Document Object Model — DOM — is an API for HTML documents that allows you to manipulate the browser without permanently changing anything in the code.</p>
+        <h2>Server Routes</h2>
+        <p class="keyword">A <span>route</span> is the endpoint of a server request, where the data is kept. Routes let you send and revieve data depending on the route and the HTTP method used. Routes are used for different types of requests/HTTP methods.</p>
+        <ul class="keyword">
+          <li><span>post</span> submits data to the specified sources.</li>
+          <li><span>get</span> retrieves a resource from a server</li>
+          <li><span>delete</span> deletes specified resource</li>
+          <li><span>put</span> / <span>patch</span> updates specifed resource (these are not often used)</li>
+        </ul>
+        <h2>RESTful APIs</h2>
+          <p class="keyword">Representaional State Transfer, <span>REST</span>, is like a set of rules that provide a standard of way for clients to interact with resources on the internet.</p>
+          <p class="keyword"><span>RESTful API</span> is like a waiter in a resturant following a menu <span>(API documentation)</span> and serves the food <span>(resources)</span> requested using the predefined instructions <span>(HTTP methods)</span>. <span>RESTful APIs</span> must:
+            <ul>
+              <li>comprise servers, clients, resources and requests via HTTP</li>
+              <li>use stateless communications between client and server</li>
+                <ul>
+                  <li>* to be stateless, one request to a server doesn't depend on/affect a different request</li>
+                </ul>
+              <li>serve cached objects to reduce bandwidth</li>
+              <li>maintain uniform interface between client and server so they can evolve seperately</li>
+              <li>can perform code on demand (optional)</li>
+            </ul>
         <button id="back-btn5">Back</button>
       </section>
       <!-- JavaScript Helpers -->
@@ -215,7 +240,9 @@
         <button id="node-box">Node.js</button>
         <button id="oop-box">Object Oriented Programming (OOP)</button>
         <button id="express-box">Express.js</button>
-        <button id="mysql-box">MySQL</button>
+        <button id="mysql-box">SQL & MySQL</button>
+        <button id="mongo-box">MongoDB</button>
+        <button id="react-box">React</button>
         <br>
         <button id="back-btn6">Back</button>
       </section>
@@ -286,7 +313,7 @@
           <li><span>node server</span> starts/runs the server</li>
           <li><span>ctrl c</span> stops the server</li>
         </ul>
-          <p><strong>Routes</strong> send and recieve depending on the specific route and the HTTP method used. The HTTP methods are:</p>
+          <p><strong>Routes</strong> send and recieve data depending on the specific route and the HTTP method used. The HTTP methods are:</p>
           <ul class="keyword">
             <li><span>post</span> submits data to the specified sources.</li>
             <li><span>get</span> retrieves a resource from a server</li>
@@ -315,10 +342,10 @@
           <h3>Query Params</h3>
               <p class="keyword"><span>Query Params</span> change the information you get back from the API, whether it's the order of the data or the content. Based on what you put in, it sorts through the information.</p>
       </section>
-      <!-- MySQL info -->
+      <!-- SQL & MySQL info -->
       <section class="hidden" id="mysql-info">
-        <h2>SQL</h2>
-        <p class="keyword">Structured Query Language, <span>SQL</span>, uses queries to interact with data that is stored in a database. <span>SQL</span> operations are:</p>
+        <h2>SQL and MySQL</h2>
+        <p class="keyword">Structured Query Language, <span>SQL</span>, uses queries to interact with data that is stored in a database. <span>MySQL</span> is an open-source database product that implements the <span>SQL</span> standard. Some operations are:</p>
         <ul class="keyword">
           <li><span>CREATE</span> makes a new table</li>
           <ul class="keyword">
@@ -338,7 +365,7 @@
           <li><span>mysql -u root -p</span> starts MySQL on your terminal</li>
           <li><span>source [file name]</span> runs the .sql file</li>
         </ul> 
-        <h3>Other SQL commands:</h3>
+        <h3>Other commands:</h3>
         <ul class="keyword">
           <li><span>SELECT</span> extracts data from a database</li>
           <li><span>INSERT INTO</span> inserts new data into a database</li>
@@ -427,10 +454,72 @@
           <li>in the <span>.env</span> file:</li>
         <img src="./assets/images/env.png">
         </ul>
-
         <h3>Resources</h3>
         <a href="https://www.w3schools.com/sql/default.asp">W3 Schools SQL tutorial</a>
       </section>
+      <!-- MongoDB -->
+      <section class="hidden" id="mongo-info"> 
+        <h1>MongoDB</h1>
+        <p class="keyword"><span>MongoDB</span> is a NoSQL document database that uses documents to store data using <span>BSON</span>. MongoDB Atlas is a cloud database platform and the counterpart of locally run MongoDB. 
+          <ul>
+            <li>NoSQL is an umbella term for any database that is not SQL. The four main types are:</li>
+            <ul>
+              <li>document databases</li>
+              <li>key-value stores/hash databases</li>
+              <li>graph databases</li>
+              <li>column-oriented</li>
+            </ul>
+            <li><span>BSON</span>, Binary JSON, is the data format the MongoDB uses, works like regular JSON</li>
+          </ul>
+          <ul>
+            <li>MongoDB uses documents and objects in collections instead of tables and don't have an enforced schema to limit the type of data stored</li>
+          </ul>
+          <table class="table">
+            <tr>
+              <th>SQL</th>
+              <th>MongoDB</th>
+            </tr>
+            <tr>
+              <td>table</td>
+              <td>collection</td>
+            </tr>
+            <tr>
+              <td>row</td>
+              <td>document</td>
+            </tr>
+            <tr>
+              <td>column</td>
+              <td>field</td>
+            </tr>
+            <tr>
+              <td>related data split between tables</td>
+              <td>related data nested in embedded documents</td>
+            </tr>
+          </table>
+          <h3>Commands</h3>
+          <ul class="keyword">
+            <li><span>use [database name]</span> move between databases</li>
+            <li><span>.insertOne</span> inserts a document</li>
+            <li><span>.updateOne</span> updates a document</li>
+            <li><span>.updateMany</span> updates multiple documents at once</li>
+            <li><span>.find</span> selects document in a collection</li>
+            <li><span>.deleteOne</span> deletes a document, should be used by id</li>
+            <li><span>.dropDatabase()</span> drops current database</li>
+            <li><span>.getCollectionNames()</span> shows all collections</li>
+            <li><span>.db.[collection name]</span> drops specified collection</li>
+          </ul>
+          <h3>Getting started</h3>
+          <ul class="keyword">
+            <li><span>use gettingStarted</span> creates a new database called <span>gettingStarted</span>; databse doesn't show up until there's content</li>
+            <li><span>db.createCollection("intro")</span> OR <span>db.intro.insertOne({"title": "Hi!"})</span> creates a collection; the second one inserts a document called <span>Hi!</span> into the collection</li>
+            <li><span>db.intro.insertOne({"title": "Hi!"})</span> inserts a single document, <span>Hi!</span>, into the <span>intro</span> collection</li>
+        </pul>
+      <section>
+        <!-- React -->
+      <section class="hidden" id="react-info"> 
+        <h1>React</h1>
+        <p class="keyword"><span>React</span> is a javaScript library for building user interfaces (UI) using components.
+      <section>
 <!-- handy dandy tools -->
       <section class="hidden" id="box7-info">
         <h1>Handy Dandy Tools</h1>
