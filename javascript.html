@@ -542,11 +542,27 @@
         <h1>Webpack</h1>
         <p>Webpack is a library that simplifies the process of managing dependencies and bundling assets. It bundles together various assets such as JavaScript files, CSS stylesheets, images, and fonts into a single package for deployment.</p>
         <ul>
-          <li><span></span></li>
-          <li><span></span></li>
+          <li><span>loaders</span> are modules that let Webpack transform individual files during the bundling process</li>
+          <ul>
+            <li>loaders are usually used for transpiling code, preprocessing CSS, or handling different file formats</li>
+            <li>loaders are applied directly to the source files and imported or required in the code</li>
+            <li><a href="https://webpack.js.org/loaders/" target="_blank">different loaders</a></li>
+          </ul>
+          <li><span>plugins</span> operate on the entire bundle rather that individual files</li>
+          <ul>
+            <li>allow for a wide range of tasks like code optimization, asset management, and environment-specific configuration</li>
+            <li>can generate HTML files, extract CSS into separate files, minifying JavaScript code, and more</li> 
+            <li><a href="https://webpack.js.org/plugins/html-webpack-plugin/" target="_blank">different plugins</a></li>
+          </ul>
         </ul>
+        <h3>Hot Module Replacement</h3>
+        <p>Hot Module Replacement (HMR) is a feature in Webpack that allows developers to update modules in an application without requiring a full page reload. The hot module is the file you're working on, gets replaced by the build.</p>
+        <ul class="keyword">
+          <li>Instead of reloading the entire page, HMR applies incremental updates to the parts of the application that have changed</li>
+          <li>need to add <span>webpack-dev-server</span> package and configure it to enable HMR</li>
+        </ul> 
       </section>
-<!-- handy dandy tools -->
+      <!-- handy dandy tools -->
       <section class="hidden" id="box7-info">
         <h1>Handy Dandy Tools</h1>
         <h2>Local Storage</h2>

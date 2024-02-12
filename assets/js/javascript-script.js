@@ -144,7 +144,7 @@ mongoBox.addEventListener('click', function() {
     }
 });
 
-reactBox.addEventListener('click', function() {
+reactBox.addEventListener('click',  function() {
     if (reactInfo.classList.contains('hidden')) {
         reactInfo.classList.remove('hidden');
     } else {
