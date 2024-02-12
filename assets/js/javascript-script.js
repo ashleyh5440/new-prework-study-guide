@@ -12,6 +12,7 @@ const expressBox = document.getElementById("express-box");
 const mysqlBox = document.getElementById("mysql-box");
 const mongoBox = document.getElementById("mongo-box");
 const reactBox = document.getElementById("react-box");
+const webpackBox = document.getElementById("webpack-box");
 
 //info boxes
 const box1Info = document.getElementById("box1-info");
@@ -28,6 +29,7 @@ const expressInfo = document.getElementById("express-info");
 const mysqlInfo = document.getElementById("mysql-info");
 const mongoInfo = document.getElementById("mongo-info");
 const reactInfo = document.getElementById("react-info");
+const webpackInfo = document.getElementById("webpack-info");
 
 //back buttons
 const backBtn1 = document.getElementById("back-btn1");
@@ -139,6 +141,22 @@ mongoBox.addEventListener('click', function() {
         mongoInfo.classList.remove('hidden');
     } else {
         mongoInfo.classList.add('hidden');
+    }
+});
+
+reactBox.addEventListener('click', function() {
+    if (reactInfo.classList.contains('hidden')) {
+        reactInfo.classList.remove('hidden');
+    } else {
+        reactInfo.classList.add('hidden');
+    }
+});
+
+webpackBox.addEventListener('click', function() {
+    if (webpackInfo.classList.contains('hidden')) {
+        webpackInfo.classList.remove('hidden');
+    } else {
+        webpackInfo.classList.add('hidden');
     }
 });
 

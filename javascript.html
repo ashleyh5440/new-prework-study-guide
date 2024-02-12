@@ -18,7 +18,7 @@
     #box1, #box2, #box3, #box4, #box5, #box6, #box7, #box8 {
     background-color: rgb(1,218,218)
   }
-    #jquery-box, #node-box, #oop-box, #express-box, #mysql-box, #mongo-box, #react-box {
+    #jquery-box, #node-box, #oop-box, #express-box, #mysql-box, #mongo-box, #react-box, #webpack-box {
     padding: 2%;
     background-color: rgb(255, 136, 0);
     border: none;
@@ -27,18 +27,10 @@
     margin-left: 10%;
     margin-top: 5%;
 }
-#jquery-box:hover {
+#jquery-box:hover, #node-box:hover, #oop-box:hover, #express-box:hover, #mysql-box:hover, #mongo-box:hover, #react-box:hover, #webpack-box:hover {
     transform: scale(1.2);
 }
-#node-box:hover {
-    transform: scale(1.2);
-}
-#oop-box:hover {
-    transform: scale(1.2);
-}
-#mysql-box:hover {
-    transform: scale(1.2);
-}
+
 @media screen and (max-width: 800px) {
     #box1, #box2, #box3, #box4, #box5, #box6, #box7 {
         width: 50%;
@@ -243,6 +235,7 @@
         <button id="mysql-box">SQL & MySQL</button>
         <button id="mongo-box">MongoDB</button>
         <button id="react-box">React</button>
+        <button id="webpack-box">Webpack</button>
         <br>
         <button id="back-btn6">Back</button>
       </section>
@@ -508,18 +501,51 @@
             <li><span>.getCollectionNames()</span> shows all collections</li>
             <li><span>.db.[collection name]</span> drops specified collection</li>
           </ul>
+          <h3>Cursor Methods</h3>
+          <p>In MongoDB, executing a query doesn't immediately sult in a set of documents; it's a cursor first. A cursor is a pointer/initirator to the result set of the query -- it doesn't hold the data but the information to get to the data. Cursor methods let you navigate through the result set to do different things.</p>
+          <p>If a database is a bookshelf and the documents the books, a cursor is a bookmark that points to the first book matching the query/search criteria.</p>
+          <p>Different types of cursor methods:</p>
+          <ul class="keyword">
+            <li><span>forEach()</span> applies a function for each document in a cursor</li>
+            <li><span>next()</span> returns the next document in the cursor</li> 
+            <li><span>toArray()</span> used to convert the result set of a query into an array of documents</li> 
+            <li><span>limit()</span> limits the number of documents returned by the cursor</li> 
+            <li><span>skip()</span> skips a specified number of documents from the beginning of the cursor</li> 
+            <li><span>sort()</span> sorts the documents in the cursor based on the specified criteria.</li> 
+            <li><span>count()</span> returns the count of documents in the cursor</li>
+            <li><span>map()</span> applies a function to each document in the cursor and returns the results as an array</li>
+            <li><span>pretty()</span> formats the output of the cursor in a more human-readable way</li>      
+          </ul>   
+          <h3>Mongoose</h3>
+          <p>Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node. Mongoose allows you to define schemas for your data models and provides a set of features to interact with MongoDB</p>
+          <ul class="keyword"> 
+            <li>A schema is declared in MongodDb using Mongoose with something like <span>const Schema = mongoose.Schema;</span> or <span>const { Schema, model } = require('mongoose');</span> (perferred way). The schema is then defined (models file)</li>
+            <li>The Mongoose <span>connect()</span> establishes a connection to the MongoDB database (connection file); looks something like <span>const [variable name] = 'mongodb://127.0.0.1:27017/[database name]';</span></li>
+          </ul>
           <h3>Getting started</h3>
           <ul class="keyword">
-            <li><span>use gettingStarted</span> creates a new database called <span>gettingStarted</span>; databse doesn't show up until there's content</li>
+            <li><span>npm i express mongoose</span> to install express and mongoose for the project</li>
+            <li><span>use newDatabase</span> (in the terminal or in MongoDBCompass) creates a new database called <span>newDatabase</span>; databse doesn't show up until there's content</li>
             <li><span>db.createCollection("intro")</span> OR <span>db.intro.insertOne({"title": "Hi!"})</span> creates a collection; the second one inserts a document called <span>Hi!</span> into the collection</li>
             <li><span>db.intro.insertOne({"title": "Hi!"})</span> inserts a single document, <span>Hi!</span>, into the <span>intro</span> collection</li>
-        </pul>
-      <section>
+            <li>create a connection file using <span>connect()</span> method</li>
+            <li>create a server file to set up the Express server and connect it to the MongoDB database</li> 
+        </ul>
+      </section>
         <!-- React -->
       <section class="hidden" id="react-info"> 
         <h1>React</h1>
-        <p class="keyword"><span>React</span> is a javaScript library for building user interfaces (UI) using components.
-      <section>
+        <p class="keyword"><span>React</span> is a javaScript library for building user interfaces (UI) using components. 
+      </section>
+        <!-- Webpack -->
+      <section class="hidden" id="webpack-info">
+        <h1>Webpack</h1>
+        <p>Webpack is a library that simplifies the process of managing dependencies and bundling assets. It bundles together various assets such as JavaScript files, CSS stylesheets, images, and fonts into a single package for deployment.</p>
+        <ul>
+          <li><span></span></li>
+          <li><span></span></li>
+        </ul>
+      </section>
 <!-- handy dandy tools -->
       <section class="hidden" id="box7-info">
         <h1>Handy Dandy Tools</h1>
@@ -541,7 +567,7 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
     <script src="./assets/js/javascript-script.js"></script>
   </body>
 </html>
