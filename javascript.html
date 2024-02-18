@@ -535,7 +535,29 @@
         <!-- React -->
       <section class="hidden" id="react-info"> 
         <h1>React</h1>
-        <p class="keyword"><span>React</span> is a javaScript library for building user interfaces (UI) using components. 
+        <p class="keyword"><span>React</span> is a javaScript library for building user interfaces (UI) using components.</p>                                
+        <ul class="keyword">
+          <li><span>components</span> are like the building blocks for React; they're reusable, and look like organized units on the page</li>
+          <li><span>props</span> send variables from one component to the other</li>
+          <li>React uses a <span>virtual DOM</span> instead of directly manipulating the browser's DOM; when a component's state changes, React compares the virtual DOM with the real DOM and only updates the parts that have changed</li>
+          <li><span>JSX</span> is a syntax extension to JavaScript, can put any JS expression in braces</li>
+        </ul>
+        <h3>Getting started</h3>
+        <ul class="keyword">
+          <li><span>npm create vite@latest</span> creates a new React project</li>
+          <li>connect to GitHub</li>
+          <ul class="keyword">
+            <li><span>git init</span> initialize a Git repository</li>
+            <li><span>git add .</span> add all files in the project</li>
+            <li><span>git commit -m "Initial commit"</span> to add commit message</li>
+            <li><span>git remote add origin &lt;repository_url&gt;</span></li>
+            <li><span>git checkout -b main</span> to create main branch to connect to GitHub's <span>main</span> branch</li>
+            <li><span>git pull origin main --allow-unrelated-histories</span> lets you merge the unrelated histories of the branches</li>
+            <li><span>git push origin main</span> to push changes to main branch</li>
+          </ul>
+          <li><span></span></li>
+          <li><span></span></li>
+        </ul>  
       </section>
         <!-- Webpack -->
       <section class="hidden" id="webpack-info">
@@ -543,11 +565,11 @@
         <p>Webpack is a library that simplifies the process of managing dependencies and bundling assets. It bundles together various assets such as JavaScript files, CSS stylesheets, images, and fonts into a single package for deployment.</p>
         <ul>
           <li><span>loaders</span> are modules that let Webpack transform individual files during the bundling process</li>
-          <ul>
+          <ul>    
             <li>loaders are usually used for transpiling code, preprocessing CSS, or handling different file formats</li>
             <li>loaders are applied directly to the source files and imported or required in the code</li>
             <li><a href="https://webpack.js.org/loaders/" target="_blank">different loaders</a></li>
-          </ul>
+          </ul> 
           <li><span>plugins</span> operate on the entire bundle rather that individual files</li>
           <ul>
             <li>allow for a wide range of tasks like code optimization, asset management, and environment-specific configuration</li>
@@ -559,7 +581,9 @@
         <p>Hot Module Replacement (HMR) is a feature in Webpack that allows developers to update modules in an application without requiring a full page reload. The hot module is the file you're working on, gets replaced by the build.</p>
         <ul class="keyword">
           <li>Instead of reloading the entire page, HMR applies incremental updates to the parts of the application that have changed</li>
+          <li>HMR is an opt-in feature; if it's enabled in <span>webpack.config</span>, </li>
           <li>need to add <span>webpack-dev-server</span> package and configure it to enable HMR</li>
+          <img src="./assets/images/HMR.png">
         </ul> 
       </section>
       <!-- handy dandy tools -->
